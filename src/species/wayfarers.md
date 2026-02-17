@@ -5,6 +5,8 @@ subtitle: Nomadic shapeshifters who forge pacts with spirit patrons
 nav_order: 3
 ---
 
+<img src="/assets/images/species/wayfarers.png" alt="A Wayfarer drifting on dandelion seeds under a night sky" class="species-hero">
+
 Ever wandering and curious, **Wayfarers** are the nomads and free spirits of the small folk, often found in gardens, gutters, and the open sky, riding wayward breezes on dandelion seeds. They are also sometimes called **Driftlings** in older small folk tongue.
 
 Physically, wayfarers are lean and wiry, with colourful hair often dyed with berry juice or pollen. They possess gliding membranes or frills between their limbs that allow them to drift remarkable distances on air currents. Their eyes reflect starlight strangely, hinting at their connection to the night sky.
@@ -49,6 +51,8 @@ The transformation typically lasts from a few minutes to an hour, depending on t
 Wayfarers have one fully detailed role and a second that is still in development.
 
 ---
+
+<img src="/assets/images/species/stargazer.png" alt="A Stargazer Wayfarer gazing at the night sky" class="role-image">
 
 ## Stargazer
 

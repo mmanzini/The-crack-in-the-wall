@@ -5,6 +5,8 @@ subtitle: Shadow-bound illusionists, keepers of the Veil
 nav_order: 3
 ---
 
+<img src="/assets/images/species/veilings.png" alt="A Veiling emerging from shadow" class="species-hero">
+
 **Veilings** are a secretive species dwelling in the dry, hidden pockets of suburbia: under roof tiles, inside wall voids, beneath floorboards. They are insectoid in heritage — former creatures of the wild micro-world who, according to their own legend, transformed long ago into something more. They chose to cross the Veil between instinct and consciousness, and in doing so, became small folk.
 
 **Biology:** Veilings are adapted to darkness. They can see in very low light, move almost silently, and are surprisingly light — able to cling to walls and ceilings. Their skin shifts subtly in tone to match their surroundings, not a full chameleon effect, but enough to blur their outline at a glance.
@@ -45,6 +47,8 @@ Among the Veilings, there exists a schism of belief. Most accept their transform
 Veilings have two roles: the **Duskblade** (fully detailed) and the **Mistweaver** (in development).
 
 ---
+
+<img src="/assets/images/species/duskblade.png" alt="A Duskblade Veiling poised to strike from the shadows" class="role-image">
 
 ## Duskblade
 

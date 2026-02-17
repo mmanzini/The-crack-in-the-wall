@@ -5,6 +5,8 @@ subtitle: Secretive listeners and lore-keepers of the hidden world
 nav_order: 3
 ---
 
+<img src="/assets/images/species/whisperlings.png" alt="A Whisperling scout moving silently through shadows" class="species-hero">
+
 Silently padding through hollow walls and dusty attics, **Whisperlings** are the secretive listeners and lore-keepers of the small folk. They earned their name because they always seem to know the house's secrets — catching murmurs through vents, learning human routines, trading in rumours with other small folk.
 
 Physically, whisperlings are slight, pale or grey-skinned with large light-sensitive eyes adapted to darkness. They dress in mottled tones of cobweb, cloth scrap and ink, helping them blend into shadows. Culturally, they are cautious and clever: a Whisperling community might live behind the walls of an old house library, holding whispered council by candlelight and venturing out only when the floorboards cease creaking above.

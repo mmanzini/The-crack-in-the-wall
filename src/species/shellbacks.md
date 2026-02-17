@@ -5,6 +5,8 @@ subtitle: Stout defenders and engineers of the hidden world
 nav_order: 3
 ---
 
+<img src="/assets/images/species/shellbacks.png" alt="A Shellback warrior in chitinous armour" class="species-hero">
+
 Where other small folk rely on speed or cunning, **Shellbacks** rely on endurance. Compact and powerfully built, with natural chitinous plating over their shoulders and spine, they are the unbreakable shields of small folk society. A Shellback community might protect an entire street's worth of smaller folk from predators, building fortified homes from tin cans and bottle caps and enforcing their own brand of stubborn justice.
 
 Culturally, Shellbacks are community-oriented, pragmatic, and slow to anger but implacable once roused. They don't back down. A Shellback who has decided to hold a position will still be there long after everyone else has given up. This makes them natural guardians, engineers, and arbiters of disputes.
@@ -39,6 +41,8 @@ Among the small folk, there is a legend that all Shellbacks share the same ancie
 Shellbacks have one fully detailed role and a second in development.
 
 ---
+
+<img src="/assets/images/species/stalwart.png" alt="A Stalwart Shellback holding the line" class="role-image">
 
 ## Stalwart (Guscio Risoluto)
 
