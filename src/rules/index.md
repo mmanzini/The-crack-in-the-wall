@@ -9,7 +9,7 @@ nav_order: 2
 <strong>Mechanics highlights</strong>
 <ul>
 <li>Roll tests with multiple advantages or disadvantages (like Blades in the Dark)</li>
-<li>Combat rolls almost always hit — you only roll damage</li>
+<li>Combat rolls almost always hit — the Primary Die in your damage pool determines miss, hit, or crit</li>
 <li>Action and reaction economy based on turn count</li>
 <li>Exploding crits</li>
 <li>Dice fail mitigation with Grit, a fluid currency you spend to improve future odds</li>
@@ -84,7 +84,7 @@ These do not change the die result — they guide narration.
 
 You gain **1 Grit** when:
 - You make an attack, attribute test, save, or Initiative roll
-- The **kept die** shows a **1**
+- The **kept die** (the single result your pool is judged by) shows a **1**
 - You are not already at 5 Grit
 
 You gain at most 1 Grit per roll, even if several dice show 1. You cannot spend freshly earned Grit on the same roll.
@@ -163,7 +163,7 @@ Some strong effects cost **2 or 3 actions**. Multi-action effects can be stretch
 
 ### 6.2 Reactions
 
-Reactions are powerful off-turn moves taken during someone else's turn. Each reaction costs **1 action** spent from your **unused actions on your current turn** (or actions banked at the end of your previous turn, at GM discretion).
+Reactions are powerful off-turn moves taken during someone else's turn. Each reaction costs **1 action** from your **unused actions this turn**. If you have no actions left, you cannot react.
 
 Core reactions:
 
