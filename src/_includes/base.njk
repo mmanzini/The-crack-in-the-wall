@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% if title %}{{ title }} — {% endif %}Tiny Shadows</title>
   <meta name="description" content="Tiny Shadows — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood." />
+  <script src="/assets/theme.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,6 +43,13 @@
         <li><a href="/bestiary/" class="nav-link {% if '/bestiary' in page.url %}active{% endif %}">Bestiary</a></li>
         <li><a href="/campaign/" class="nav-link {% if '/campaign' in page.url %}active{% endif %}">The Thornwick Block</a></li>
       </ul>
+
+      <div class="sidebar-footer">
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Switch to dark mode">
+          <span id="theme-icon" class="theme-toggle-icon">&#9790;</span>
+          <span id="theme-label">Dark mode</span>
+        </button>
+      </div>
 
     </nav>
 

@@ -115,7 +115,7 @@ body {
 
 .nav-section-label {
   font-family: var(--font-serif);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--text-faint);
   text-transform: uppercase;
@@ -127,7 +127,7 @@ body {
   display: block;
   padding: 0.3rem 1.25rem;
   font-family: var(--font-serif);
-  font-size: 0.92rem;
+  font-size: 1rem;
   color: var(--text);               /* black — top-level links */
   font-weight: 700;                 /* bold — top-level links */
   text-decoration: none;
@@ -146,7 +146,7 @@ body {
 
 .nav-link.nav-sub {
   padding-left: 2rem;
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   color: var(--text-muted);         /* grey — sub-page links */
   font-weight: 400;                 /* regular weight */
 }
@@ -598,4 +598,71 @@ article.prose > h1:first-child {
 @media print {
   .sidebar, .nav-toggle { display: none; }
   .content { margin-left: 0; }
+}
+
+/* --- Sidebar footer & theme toggle ------------------------- */
+
+.sidebar-footer {
+  padding: 1rem 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  padding: 0.3rem 0;
+  transition: color 0.15s;
+  width: 100%;
+  text-align: left;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}
+
+.theme-toggle-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* --- Dark mode -------------------------------------------- */
+
+html.dark {
+  --bg:           #181816;
+  --text:         #e8e6e1;
+  --text-muted:   #9a9890;
+  --text-faint:   #636260;
+  --accent:       #c4783a;
+  --accent-light: #c4712a33;
+  --border:       #2e2c28;
+  --badge-bg:     #2e2318;
+  --badge-text:   #c4783a;
+  --warn-bg:      #2a2010;
+  --warn-border:  #6b5520;
+  --warn-text:    #c4a060;
+}
+
+html.dark .card {
+  background: #1e1c19;
+}
+
+html.dark .stat-block {
+  background: #1e1c19;
+}
+
+html.dark .prose code {
+  background: #2a2826;
+  color: #c4a080;
+}
+
+html.dark .prose pre {
+  background: #111110;
 }
