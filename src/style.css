@@ -152,21 +152,6 @@ body {
   padding-left: 2rem;
 }
 
-.sidebar-footer {
-  padding: 1rem 1.25rem;
-  border-top: 1px solid var(--border);
-}
-
-.wip-note {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  color: var(--warn-text);
-  background: var(--warn-bg);
-  border: 1px solid var(--warn-border);
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  line-height: 1.4;
-}
 
 /* --- Mobile nav toggle ------------------------------------- */
 
@@ -571,28 +556,36 @@ article.prose > h1:first-child {
   .card-grid {
     grid-template-columns: 1fr;
   }
+
+  /* On small screens, images sit flush — no bleed */
+  .species-hero,
+  .role-image {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* --- Species images ---------------------------------------- */
 
-.species-hero {
-  width: 100%;
-  max-width: var(--content-max);  /* fills the full text column */
+.species-hero,
+.role-image {
+  /* Bleed 3rem beyond the prose column on each side */
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
   height: auto;
   border-radius: 12px;
-  margin: 0 0 2.5rem 0;
   display: block;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
+.species-hero {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
 .role-image {
-  width: 100%;
-  max-width: var(--content-max);  /* matches hero — full text column */
-  height: auto;
-  border-radius: 12px;
-  margin: 2rem 0 1.5rem 0;
-  display: block;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* --- Print ------------------------------------------------- */
