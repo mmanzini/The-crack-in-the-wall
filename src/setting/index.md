@@ -23,7 +23,9 @@ To the small folk, humans are enormous, god-like beings. Usually oblivious, some
 
 A core truth shapes life here: **magic collapses under direct human observation**. If a human gazes directly upon a spell or enchantment, the magic flickers out, dispelled by the oppressive logic of the big world.
 
-But the horror runs deeper still. **Under the direct gaze of a human, the Small Folk themselves lose their sentience**. They become ordinary insects or mice — mundane animals acting on pure instinct, stripped of will, purpose, and identity. When the human looks away, the small folk return to themselves, remembering the experience with visceral terror and dismay. The sensation of their thoughts dissolving is called *the blank* — a core existential dread that shapes all Small Folk culture.
+But the horror runs deeper still. **Under the direct gaze of a human, the Small Folk themselves lose their sentience**. They become ordinary insects or mice — mundane animals acting on pure instinct, stripped of will, purpose, and identity. When the human looks away, the small folk return to themselves, remembering the experience with visceral terror and dismay.
+
+The sensation of their thoughts dissolving. Their personality erased. Their very self snuffed out like a candle. This existential dread — called *the Blank* — is a core reason the Small Folk regard humans with profound awe and fear. They are living gods who can unmake you with a glance.
 
 <div class="callout callout-tip">
 <strong>Gameplay implication:</strong> The Law of Witness isn't just flavour — it creates organic tension. A human entering the room mid-spell ends the scene immediately. Clever players will use distractions, timing, and stealth to ensure their magic lands unseen.
@@ -49,7 +51,11 @@ These humble talents might seem minor to outsiders, but in the tiny realm they c
 - A **Rainling** can call gentle drizzle from a clear sky
 - A **Veiling** can blur their outline until human eyes slide away
 
+Such innate magic is always present in small ways: a Whisperling child might never be found at hide-and-seek, or a Wayfarer might never take harm from a fall, landing feather-light.
+
 Some small folk dedicate themselves to **focused training or ritual** to unlock greater powers beyond their birth gifts. By study, meditation, or pact, a character can learn advanced magic — building on their racial talent.
+
+Magic, of course, bends to the **Law of Witness**: a garden shaman might summon fireflies to light a path only once the homeowner's back is turned. An enterprising Whisperling might sneak into a study to swipe a pen, turning invisible in the shadow under the desk the instant a human looks their way. Magic here always has an air of something half-imagined — the moment you try to prove it exists, it's gone.
 
 ### Magic is never about big explosions
 
@@ -59,7 +65,13 @@ It's rarely about tossing giant fireballs (a candle flame is adventure enough!),
 - A healing spell might involve grinding human aspirin into fairy dust
 - A "firestorm" might tip a nightlight and spill wax
 
+Each race's magic has a flavour — Whisperlings deal in shadows, echoes, and secrecy; Wayfarers harness wind, weather, and the guidance of far-off places; Shellbacks draw on earth, flora, and resilience.
+
+And should one push too far too fast, the results can be unpredictable: a miscast spell could, for instance, animate a dozen toy soldiers marching at the wrong time, surely drawing human notice! Caution and creativity go hand in hand.
+
 Spellcasting often means improvising within constraints: since formal magic schools are unheard of, small folk learn from folklore, old family techniques, or trading secrets at midnight.
+
+Many magical encounters between small folk occur in secret, unseen corners — the outcome of a duel could hinge on whether the kitchen light suddenly turns on, forcing both combatants' illusions to sputter out in an instant. Such is the whimsical peril of the Hidden World's magic.
 
 ---
 
