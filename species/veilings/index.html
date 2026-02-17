@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veilings (Velati) — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top active">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub active">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="veilings-velati">Veilings (Velati)</h1>
+            <p class="subtitle">Shadow-bound illusionists, keepers of the Veil</p>
+          </header>
+        
+        <img src="/assets/images/species/veilings.png" alt="A Veiling emerging from shadow" class="species-hero">
+<p><strong>Veilings</strong> are a secretive species dwelling in the dry, hidden pockets of suburbia: under roof tiles, inside wall voids, beneath floorboards. They are insectoid in heritage — former creatures of the wild micro-world who, according to their own legend, transformed long ago into something more. They chose to cross the Veil between instinct and consciousness, and in doing so, became small folk.</p>
+<p><strong>Biology:</strong> Veilings are adapted to darkness. They can see in very low light, move almost silently, and are surprisingly light — able to cling to walls and ceilings. Their skin shifts subtly in tone to match their surroundings, not a full chameleon effect, but enough to blur their outline at a glance.</p>
+<p><strong>Culture and Society:</strong> Veilings are the lore-keepers of the unseen. Living so close to humans yet remaining unknown, they've developed a rich tradition of oral history, silent communication (a complex sign language of finger-patterns), and the art of illusion. They believe that the world is made of layers — the obvious layer humans see, and the true layer hidden beneath it.</p>
+<p>At the heart of Veiling culture lies their worship of <strong>Father Dragon</strong>, a mythic figure they revere as their ancient progenitor. Veilings believe that in ages past, their kind were true insects who formed a pact with a powerful dragon spirit, gaining sentience at the price of their connection to the natural world.</p>
+<p>Among the Veilings, there exists a schism of belief. Most accept their transformation as permanent and honourable. But a secretive splinter group, the <strong>Rememberers</strong>, believes they can one day reverse the transformation and return to their &quot;true&quot; insect forms — something most Veilings consider both impossible and horrifying.</p>
+<hr>
+<h2 id="racial-traits">Racial traits</h2>
+<div class="stat-block">
+<h4 id="veiling-racial-traits">Veiling — Racial Traits</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Hit Die</span><span class="stat-value">d6</span></div>
+  <div class="stat-item"><span class="stat-label">Key Attributes</span><span class="stat-value">DEX, INT</span></div>
+  <div class="stat-item"><span class="stat-label">Size</span><span class="stat-value">Tiny (~1.5 inches)</span></div>
+</div>
+</div>
+<p><strong>Darkvision</strong> — Veilings can see in near-total darkness as if it were twilight. In absolute darkness, they still see in grayscale at short range.</p>
+<p><strong>Wall-Walker</strong> — Veilings can climb vertical surfaces and move along ceilings at their full Speed. Textured surfaces (wood, plaster, brick) require no check; smooth surfaces (glass, polished metal) require a DEX test.</p>
+<p><strong>Veil of Invisibility</strong> — All Veilings have a weak innate glamour that makes them <em>less noticeable</em>. It's not full invisibility, but humans are prone to overlooking them — unless they actively search. Against passively observing humans, Veilings have a <strong>+2 Boon on stealth checks</strong> from this glamour alone.</p>
+<p><strong>Innate Illusion</strong> — Veilings can naturally perform minor illusions and tricks. A startled Veiling might cause the lights to flicker; a calm one might make a shadow appear to move oddly. Once per scene, a Veiling can create a brief (1-round) minor illusion with no roll required — a sound, a flash, a shimmer.</p>
+<p><strong>Hushed and Wary</strong> — Veilings have advantage in situations of silent communication and are naturally quiet. They have a +1 Boon on stealth checks that specifically relate to making no sound.</p>
+<hr>
+<h2 id="roles">Roles</h2>
+<p>Veilings have two roles: the <strong>Duskblade</strong> (fully detailed) and the <strong>Mistweaver</strong> (in development).</p>
+<hr>
+<img src="/assets/images/species/duskblade.png" alt="A Duskblade Veiling poised to strike from the shadows" class="role-image">
+<h2 id="duskblade">Duskblade</h2>
+<p><em>The stealthy scout and silent blade.</em></p>
+<p>Where Mistweavers use magic to deceive, Duskblades use their bodies and shadow magic to strike with lethal precision. They are the assassins and infiltrators of the Veiling people — quick, deadly, and almost impossible to catch once they've melted back into the dark.</p>
+<p>Mechanically, the Duskblade is a <strong>rogue/ranger</strong>, excelling at stealth, reconnaissance, and precision strikes.</p>
+<div class="stat-block">
+<h4 id="duskblade-class-stats">Duskblade — Class Stats</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Attack Die</span><span class="stat-value">d6</span></div>
+  <div class="stat-item"><span class="stat-label">Primary Stats</span><span class="stat-value">DEX, INT</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Light</span></div>
+</div>
+</div>
+<h3 id="class-features-levels-1-10">Class features (Levels 1–10)</h3>
+<ul class="level-list">
+<li class="level-item">
+<span class="level-num">Level 1</span>
+<div class="level-content">
+<strong>Shadow Crawler</strong>
+<p>+1 Boon on stealth checks in dim light or darkness. You can move through spaces half your body size without penalty. You can cling to walls and ceilings at full Speed (stacks with Wall-Walker).</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 2</span>
+<div class="level-content">
+<strong>Backstab</strong>
+<p>When you hit a target that did not know you were there (or is flanked and distracted), your attack deals +1d6 bonus damage and the target must make a STR save or be Staggered (pushed 1 space). This bonus damage increases to +2d6 at Level 6 and +3d6 at Level 10.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 3</span>
+<div class="level-content">
+<strong>Shadow Step (Action)</strong>
+<p>When you are in an area of darkness or dim light, step into one shadow and emerge from another shadow within 6 spaces. Both must be in dim light or darkness. This movement does not provoke Opportunity Attacks and makes no sound. You can take this action once per round.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 4</span>
+<div class="level-content">
+<strong>Umbral Aura (Free Action)</strong>
+<p>You carry an aura of darkness you can intensify. When you activate it (free action, lasts until end of your next turn): you gain +1 Boon to stealth; adjacent enemies suffer a −1 Bane to their attacks against you; and the area within 1 space of you is treated as dim light regardless of actual lighting. Can be deactivated as another free action.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 5</span>
+<div class="level-content">
+<strong>Vanish (Free Action, 1/round)</strong>
+<p>Once per combat round, if you are not in an enemy's direct line of sight (after an attack or when ducking behind cover), you can immediately become <strong>Hidden</strong> without spending an action. Enemies must search to find you. This works even if you just made an attack — you vanish between heartbeats.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 6</span>
+<div class="level-content">
+<strong>Poisoner's Touch</strong>
+<p>You've learned to use poisons from the micro-world to augment your lethality. Once per day, you can coat a weapon with Veiling toxin (applying it takes 1 action). The next successful hit with that weapon inflicts the <strong>Poisoned</strong> condition (−1 Bane on all rolls, 1d4 damage at the start of each turn for 3 turns). A STR save reduces this to 1 round.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 7</span>
+<div class="level-content">
+<strong>Terror in the Dark (Passive)</strong>
+<p>Your presence in darkness has become an almost supernatural dread. When you take down an enemy from stealth or with a Backstab, all other enemies who witnessed it must make a WIL save or gain the <strong>Frightened</strong> condition (−1 Bane on rolls while you're visible or they suspect your presence) for 2 rounds.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 8</span>
+<div class="level-content">
+<strong>Ghost Step (Action, 2⚡)</strong>
+<p>You learn to become briefly incorporeal. For 1 round, you are immune to physical damage, can pass through solid objects up to 1 space thick, and are invisible to mundane sight (but visible to magical detection). After Ghost Step ends, you materialize wherever you choose within 6 spaces of where you entered it.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 9</span>
+<div class="level-content">
+<strong>Night's Embrace (Passive)</strong>
+<p>You are so connected to the night that it actively empowers you. When outdoors at night or in total darkness, you gain: +1 Boon on all rolls; immunity to being surprised; your movement speed increases by 2; and your Backstab damage increases by one die size (d6 → d8).</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 10</span>
+<div class="level-content">
+<strong>King of Shadows</strong>
+<p>You have become one with the shadows. Once per day (Action): you become a living shadow for up to 10 minutes. In this form you are completely undetectable by mundane means, immune to all physical damage, and can travel along any shadow surface at triple Speed. You can still observe everything around you. While in this form, you cannot attack — but when you end it, you can immediately make one attack with advantage and triple Backstab damage.</p>
+</div>
+</li>
+</ul>
+<hr>
+<h2 id="mistweaver">Mistweaver</h2>
+<p><em>The illusionist and mind-bender — the Veiling's master of the Veil itself.</em></p>
+<div class="callout callout-warn">
+<strong>⚠ Work in progress</strong> — The Mistweaver class features are not yet written. This role focuses on illusion, charm, and manipulating perception. It will complement the Duskblade by providing a magical support/controller option for Veiling players. Check back in a future update.
+</div>
+<p><strong>Narrative concept:</strong> Where the Duskblade uses shadow to strike, the Mistweaver uses it to deceive. They can make enemies see things that aren't there, make themselves appear as someone else, and subtly bend the perceptions of anyone not strong-willed enough to resist. In social situations they are matchless; in combat they create confusion and exploitable openings.</p>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

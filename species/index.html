@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Species &amp; Classes — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top active">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="species-and-classes">Species &amp; Classes</h1>
+            <p class="subtitle">Five peoples, ten roles — your origin is your calling</p>
+          </header>
+        
+        <p>In The Crack in the Wall, a hero's origin <strong>species is their class</strong>. Each species has unique racial traits and two distinct role variants that serve as subclasses. All members of a species share common abilities, but each individual trains in one of two ways.</p>
+<p>All small folk heroes use the same attribute system (STR, DEX, INT, WIL) and Boon/Bane mechanics for tests.</p>
+<hr>
+<h2 id="the-five-peoples">The five peoples</h2>
+<table>
+<thead>
+<tr>
+<th>Species</th>
+<th>Key attributes</th>
+<th>Attack die</th>
+<th>Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/species/whisperlings/"><strong>Whisperlings</strong></a></td>
+<td>DEX, INT</td>
+<td>d6</td>
+<td>Echo-Walker · Shadow-Teller</td>
+</tr>
+<tr>
+<td><a href="/species/wayfarers/"><strong>Wayfarers</strong></a></td>
+<td>WIL, DEX</td>
+<td>d6</td>
+<td>Stargazer · <em>(second role TBD)</em></td>
+</tr>
+<tr>
+<td><a href="/species/shellbacks/"><strong>Shellbacks</strong></a></td>
+<td>STR, WIL</td>
+<td>d8</td>
+<td>Stalwart · <em>(second role TBD)</em></td>
+</tr>
+<tr>
+<td><a href="/species/rainlings/"><strong>Rainlings</strong></a></td>
+<td>DEX, WIL</td>
+<td>d6</td>
+<td>Raincaller · Gutter Runner</td>
+</tr>
+<tr>
+<td><a href="/species/veilings/"><strong>Veilings</strong></a></td>
+<td>DEX, INT</td>
+<td>d6</td>
+<td>Duskblade · Mistweaver <em>(WIP)</em></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-warn">
+<strong>⚠ Work in progress</strong> — Some second roles are not yet written. The Mistweaver (Veiling illusionist) is the most notable gap. These will be added in a future update.
+</div>
+<hr>
+<h2 id="choosing-your-species">Choosing your species</h2>
+<p><strong>Whisperlings</strong> are for players who love stealth, information, and playing the clever trickster. They're physically frail but mentally sharp.</p>
+<p><strong>Wayfarers</strong> are for players who love shapeshifting and spirit bonds — versatile and mystical, always on the move.</p>
+<p><strong>Shellbacks</strong> are for players who want to be the reliable defender, absorbing punishment and protecting allies.</p>
+<p><strong>Rainlings</strong> are for players who want magic woven into everything they do — combat, movement, even how they hide.</p>
+<p><strong>Veilings</strong> are for players who love illusions, secrets, and the eerie side of the hidden world.</p>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

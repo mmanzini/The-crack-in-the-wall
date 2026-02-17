@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Thornwick Block — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top ">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top active">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="the-thornwick-block">The Thornwick Block</h1>
+            <p class="subtitle">A ready-to-run campaign setting — three houses, infinite secrets</p>
+          </header>
+        
+        <img src="/assets/images/species/thornwick-block.png" alt="The Thornwick Block — a cul-de-sac world for the Small Folk" class="species-hero">
+<p>The Thornwick Block is a quiet cul-de-sac where three houses — each with its own family, garden, and secrets — create a continent-sized realm for the Small Folk. Between the garden pond's inland sea, the ancient oak's canopy kingdom, and the storm drain's abyss, an entire world of adventure, mystery, and terror awaits those small enough to see it.</p>
+<hr>
+<h2 id="the-three-houses">The three houses</h2>
+<h3 id="1-thornwick-manor-number-7">1. Thornwick Manor (Number 7)</h3>
+<p><em>The Old Estate</em></p>
+<p><strong>The building:</strong> A three-story Victorian house with peeling paint, overgrown ivy, and more rooms than its elderly occupant can use. Mrs. Thornwick, a widow in her eighties, moves slowly between the kitchen, sitting room, and garden. She seems to sense that something is different about her home, but chalks it up to old age.</p>
+<p><strong>Interior territories:</strong></p>
+<ul>
+<li><strong>The Attic Archive</strong> — Dusty boxes of letters, photographs, and forgotten heirlooms. The Veilings have established their Court of Echoes here, led by the mysterious <strong>Lady Silhouette</strong>, who claims to remember when the house was first built.</li>
+<li><strong>The Wall-Ways</strong> — An extensive network between the walls where Whisperling scouts maintain maps and listening posts. Rumours speak of a hidden chamber where the founder of their clan is rumoured to have died — and never quite left.</li>
+<li><strong>The Conservatory</strong> — A glass-roofed room filled with dying plants. Rainlings maintain a struggling colony around the few surviving ferns, constantly seeking water from the house's dripping pipes.</li>
+</ul>
+<p><strong>The Marquis:</strong> Level 6 legendary threat. This battle-scarred ginger tom has claimed the entire Manor as his hunting ground. He's cunning, patient, and seems to take a particular interest in small folk beyond mere predation. Ancient. Knowing. Something is wrong about him.</p>
+<hr>
+<h3 id="2-the-ashwood-house-number-9">2. The Ashwood House (Number 9)</h3>
+<p><em>The Young Family's Home</em></p>
+<p><strong>The building:</strong> A modern two-story house with a red-tiled roof. The Ashwood family — parents Tom and Sarah, children Lily (8) and Oliver (5) — are busy, distracted, and rarely look closely at the corners of their home.</p>
+<p><strong>Interior territories:</strong></p>
+<ul>
+<li><strong>The Kitchen Kingdoms</strong> — Multiple Small Folk factions vie for control of the pantry. Shellback engineers have built elaborate pulley systems to access the higher shelves. Territorial disputes are constant and occasionally violent.</li>
+<li><strong>Oliver's Room — The Toy Graveyard</strong> — Broken action figures, forgotten stuffed animals, and LEGO bricks create a treacherous landscape. At night, some toys... move.</li>
+<li><strong>The Basement Forge</strong> — A cluttered workshop where Tom's abandoned projects gather dust. Shellback tinkers have claimed it, harvesting nails, screws, and wire to build tools and weapons.</li>
+</ul>
+<p><strong>The children:</strong> Both Lily and Oliver can see Small Folk, though Oliver is beginning to lose the ability as he grows older. Lily is curious but can be unpredictably kind or cruel. Oliver leaves out tiny offerings — a thimble of milk, a matchstick — and wants desperately to be friends.</p>
+<hr>
+<h3 id="3-the-bramble-cottage-number-11">3. The Bramble Cottage (Number 11)</h3>
+<p><em>The Quiet House</em></p>
+<p><strong>The building:</strong> A single-story cottage with a blue door and white shutters. Mr. Keane, a reclusive writer in his forties, lives here with his ancient Labrador, Barley, and a habit of staying up until 3am.</p>
+<p><strong>Interior territories:</strong></p>
+<ul>
+<li><strong>The Study Stacks</strong> — Towers of books and papers create a vertical maze. This is neutral territory where different Small Folk species sometimes meet for parley. The books contain knowledge that can be invaluable — if you can read the giant-script.</li>
+<li><strong>The Pipes Symphony</strong> — The cottage's old plumbing creates a musical network that Whisperlings use for long-distance communication across the Block.</li>
+<li><strong>The Forgotten Crawlspace</strong> — Accessible only through a loose board in the study. What dwells in its deepest corner has never been seen — only heard.</li>
+</ul>
+<p><strong>Barley:</strong> Unlike The Marquis, Barley is slow, nearly blind, and generally harmless. But his deep barks can shatter concentration, and his massive paws, while aimed at nothing, can accidentally destroy entire Small Folk structures.</p>
+<hr>
+<h2 id="major-locations">Major locations</h2>
+<h3 id="the-thornwick-oak">The Thornwick Oak</h3>
+<p><em>The Great Tree of the Block</em></p>
+<p>Standing in Thornwick Manor's back garden, this ancient oak spreads its canopy over multiple properties. Its trunk alone would take thirty Small Folk holding hands to encircle.</p>
+<ul>
+<li><strong>The Canopy Kingdom</strong> — High in the branches, the Wayfarers have established <strong>Windwhisper Aerie</strong>, a city of hanging platforms, leaf-bridges, and aerial routes. The view from here covers the entire Block.</li>
+<li><strong>The Squirrel War</strong> — Two enormous red squirrels — <strong>Crackjaw</strong> and <strong>Bristletail</strong> — have claimed territories that overlap with Wayfarer settlements. Negotiations have failed. War is coming.</li>
+<li><strong>Old Root</strong> — In the oak's deepest hollow, accessible only through a crack barely wide enough for a Small Folk, lives <strong>Old Root</strong> — a being who has sat there since before anyone can remember, and knows the answer to questions no one has thought to ask yet.</li>
+</ul>
+<p><strong>Secrets:</strong> Old Root isn't a tree spirit at all. It's the last remnant of a Small Folk city-mind that achieved consciousness centuries ago and chose to become still.</p>
+<hr>
+<h3 id="swans-mirror-the-garden-pond">Swan's Mirror — The Garden Pond</h3>
+<p><em>The Inland Sea</em></p>
+<p>The ornamental pond in Thornwick Manor's garden is three feet deep and fifteen feet across — an ocean to Small Folk.</p>
+<ul>
+<li><strong>Alabaster</strong> — A territorial mute swan nests at the pond's edge. She's the size of a house to Small Folk and viciously protective of her territory. Rainling communities have treaties with her — mostly involving gift offerings of choice aquatic plants.</li>
+<li><strong>Underwater Realm</strong> — Rainling communities thrive around the pond's edges. They've mapped the entire underwater terrain and know about the dangers that lurk near the drain.</li>
+<li><strong>The Downward Current</strong> — The pond is fed by an underground spring that creates a dangerous whirlpool near the drain. Rainlings speak in hushed tones of &quot;the Downward&quot; — things that fall in rarely come back up.</li>
+</ul>
+<hr>
+<h3 id="the-flowerbed-jungle">The Flowerbed Jungle</h3>
+<p><em>The Garden of Giants</em></p>
+<p>Mrs. Thornwick's once-magnificent garden has grown wild. What was meant to be a neat rose garden has become a dense wilderness of stems thicker than trees, petals wide as fields.</p>
+<ul>
+<li><strong>The Undergrowth</strong> — At soil level, beetles and ants wage constant war over territory.</li>
+<li><strong>The Stem Forest</strong> — Climbing the flower stalks is treacherous but rewarding — nectar pools gather in blooms like sweet lakes.</li>
+<li><strong>The Canopy</strong> — Where bees the size of dragons harvest pollen, and predatory wasps hunt.</li>
+<li><strong>The Rose Palace</strong> — At the Flowerbed's heart stands the largest rose bush, its central bloom a crimson cathedral. A faction of Whisperlings calling themselves the <strong>Thorn Court</strong> has claimed it as their home, led by the reclusive <strong>Crimson Queen</strong>.</li>
+</ul>
+<hr>
+<h3 id="the-ashwood-playground">The Ashwood Playground</h3>
+<p><em>Worlds Within Worlds</em></p>
+<p>The children's playground between the Ashwood House and Bramble Cottage. At night, when the children are gone, the playground becomes an entirely different kind of place.</p>
+<ul>
+<li><strong>The Sandbox Desert</strong> — Scalding hot by day, freezing by night. Buried toy soldiers have been reanimated by some entity called <strong>The Sand Whisper</strong>, who offers wishes in exchange for tasks. Every wish has a price no one tells you in advance.</li>
+<li><strong>The Slide Mountain</strong> — A gleaming aluminium slope that seems to behave differently going up versus coming down. Heroes who climb the outside ladder arrive at the top of the slide; heroes who descend find... somewhere slightly different.</li>
+<li><strong>The Swing-Set Gates</strong> — The swings, when set in motion at midnight, create portals. Small Folk brave enough to leap through a moving swing at its apex might emerge somewhere unexpected.</li>
+<li><strong>The Climbing Frame Citadel</strong> — Neutral ground where different factions meet for trade and parley. The <strong>Market of Splinters</strong> operates here on nights with no moon.</li>
+</ul>
+<hr>
+<h3 id="the-forgotten-shed">The Forgotten Shed</h3>
+<p><em>The Lonely Fortress</em></p>
+<p>At the back of the Bramble Cottage's garden stands a weathered tool shed that Mr. Keane never uses.</p>
+<ul>
+<li><strong>Rust</strong> — The shed is controlled by a Shellback who was exiled from his community for reasons he won't discuss. He's made the shed his fortress and his home. He doesn't want company. He's probably the most reliable ally in the Block.</li>
+<li><strong>The Tool Spirits</strong> — The abandoned tools have developed a kind of awareness. They don't move or speak, but Small Folk who spend time near them report feeling watched, and sometimes find things moved.</li>
+<li><strong>The Foundation Mystery</strong> — The shed's floor has a loose board that, when pried up, reveals a shaft descending far deeper than the shed's foundations should allow.</li>
+</ul>
+<p><strong>Secrets:</strong> Rust was cast out for discovering that Shellback legend about Father Dragon is literally true — and that the dragon is still alive, somewhere below the Block.</p>
+<hr>
+<h3 id="the-storm-drain">The Storm Drain</h3>
+<p><em>The Abyssal Gate</em></p>
+<p>Where the street meets the curb at the bottom of the Block's slope, a rusted storm drain marks the entrance to the underground network.</p>
+<ul>
+<li><strong>Rust-Haven</strong> — Just inside the grating, where a little daylight still penetrates, a shanty settlement clings to the walls. This is where the dispossessed and the desperate gather. Not all are hostile — many are simply surviving.</li>
+<li><strong>The Upper Channels</strong> — The first level of the storm drain: wide concrete pipes with side passages, trickling streams, and phosphorescent fungus. Navigable during dry weather.</li>
+<li><strong>The Junction of Echoes</strong> — Deeper down, where multiple pipes converge, darkness becomes absolute. Sound behaves strangely here — words spoken vanish into silence mid-syllable.</li>
+<li><strong>The Depths</strong> — Few who descend this far return. The storm drain connects to old Victorian sewers, then to something older still. Somewhere in this endless dark dwells <strong>The Catfish</strong> — or what Small Folk <em>call</em> a catfish.</li>
+</ul>
+<p><strong>Secrets:</strong> There is no catfish. There never was. The thing in the depths takes the shape of whatever the observer most fears in darkness.</p>
+<hr>
+<h2 id="factions">Factions</h2>
+<table>
+<thead>
+<tr>
+<th>Faction</th>
+<th>Base</th>
+<th>Alignment</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The Silent Choir</strong></td>
+<td>Storm drain depths, Thornwick Manor walls</td>
+<td>Hostile</td>
+<td>Necromancers and hive-mind cultists</td>
+</tr>
+<tr>
+<td><strong>The Thorn Court</strong></td>
+<td>The Rose Palace, Flowerbed</td>
+<td>Isolationist</td>
+<td>Once protectors; now strange and secretive</td>
+</tr>
+<tr>
+<td><strong>The Tin Legion</strong></td>
+<td>Sandbox</td>
+<td>Unpredictable</td>
+<td>Animated toys; serve the Sand Whisper</td>
+</tr>
+<tr>
+<td><strong>The Rust-Haven Refugees</strong></td>
+<td>Storm drain entrance</td>
+<td>Neutral</td>
+<td>Desperate survivors; potential allies</td>
+</tr>
+<tr>
+<td><strong>Windwhisper Aerie</strong></td>
+<td>Thornwick Oak</td>
+<td>Friendly</td>
+<td>Wayfarer city; eager for trade and alliance</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="campaign-hooks">Campaign hooks</h2>
+<p><strong>The Vanishing</strong> — Small Folk have been disappearing across the Block — not killed, not taken by predators, just gone. The only clue: each disappearance happens during rain, and the victims were last seen near storm drains.</p>
+<p><strong>The Squirrel Treaty</strong> — The Wayfarers of Windwhisper Aerie offer a desperate bargain: broker peace with the squirrels, or help them drive the creatures from the Oak permanently. But Crackjaw and Bristletail have their own grievances — and their own secrets.</p>
+<p><strong>The Toy Soldier March</strong> — The Tin Legion has begun emerging from the sandbox at night, marching in formation toward... something. They're not attacking. Just marching. Inexorably, toward the Thornwick Oak.</p>
+<p><strong>The Crimson Queen's Request</strong> — A messenger from the Thorn Court arrives with an invitation sealed in rose-petal wax. The Crimson Queen requests an audience — she needs heroes to retrieve something from the storm drain's depths that she is too afraid to fetch herself.</p>
+<p><strong>The Human Child's Secret</strong> — Young Oliver Ashwood has been leaving tiny offerings for months. He's seen the Small Folk and wants to help. But a child who knows too much is a child who might tell an adult — and that could bring disaster for every community on the Block.</p>
+<hr>
+<h2 id="secrets-of-the-block">Secrets of the Block</h2>
+<ol>
+<li><strong>The Foundation</strong> — All three houses were built over something older — a structure from before recorded history. The storm drain's impossible depths lead there.</li>
+<li><strong>The Marquis</strong> — The ginger tom wasn't always a cat. Veilings who remember the old songs say he was once something else — something that chose to become a predator.</li>
+<li><strong>The Thornwick Oak</strong> — Old Root isn't a tree spirit. It's the last remnant of a Small Folk city-mind that achieved consciousness centuries ago and chose to become still rather than watch its people fade.</li>
+<li><strong>The Sand Whisper</strong> — Every wish granted by this entity in the Sandbox isn't random — each one brings it closer to manifesting fully in the physical world. The Tin Legion is its vanguard.</li>
+<li><strong>The Catfish</strong> — There is no catfish. The thing in the depths takes the shape of whatever the observer most fears in darkness.</li>
+<li><strong>Rust's Exile</strong> — The Shellback who lives in the shed was cast out for discovering something his community wanted kept secret — that Shellback legend about Father Dragon is literally true, and the dragon is still alive, somewhere below the Block.</li>
+</ol>
+<hr>
+<h2 id="xp-progression">XP progression</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Total XP needed</th>
+<th>Milestone equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 → 2</td>
+<td>10 XP</td>
+<td>One big adventure</td>
+</tr>
+<tr>
+<td>2 → 3</td>
+<td>25 XP</td>
+<td>A faction quest</td>
+</tr>
+<tr>
+<td>3 → 4</td>
+<td>45 XP</td>
+<td>Major story beat</td>
+</tr>
+<tr>
+<td>4 → 5</td>
+<td>70 XP</td>
+<td>Campaign chapter complete</td>
+</tr>
+<tr>
+<td>5 → 6</td>
+<td>100 XP</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6 → 7</td>
+<td>135 XP</td>
+<td>—</td>
+</tr>
+<tr>
+<td>7 → 8</td>
+<td>175 XP</td>
+<td>—</td>
+</tr>
+<tr>
+<td>8 → 9</td>
+<td>220 XP</td>
+<td>—</td>
+</tr>
+<tr>
+<td>9 → 10</td>
+<td>270 XP</td>
+<td>Campaign complete</td>
+</tr>
+</tbody>
+</table>
+<p><strong>XP awards (suggestions):</strong></p>
+<ul>
+<li>Defeating a meaningful threat: 2–4 XP</li>
+<li>Completing a faction quest: 3–5 XP</li>
+<li>Discovering a major secret: 1–2 XP</li>
+<li>Clever non-combat solutions: 1–2 XP</li>
+<li>Surviving a near-death experience: 1 XP</li>
+</ul>
+<p><strong>Milestone option:</strong> Level up when the story hits natural beats. This is perfectly valid and aligns with the setting's narrative focus.</p>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

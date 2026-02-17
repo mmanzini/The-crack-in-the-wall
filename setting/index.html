@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top active">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top ">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="setting">Setting</h1>
+            <p class="subtitle">The hidden world of the Small Folk</p>
+          </header>
+        
+        <h2 id="the-hidden-world">The Hidden World</h2>
+<p>A quiet suburban neighbourhood block is, to its tiniest denizens, an entire continent of mystery. In this whimsical yet dark world, insect-sized humanoids known as the <strong>Small Folk</strong> live hidden in our homes, gardens, and walls. A flower bed becomes an enchanted forest of towering blooms. A single backyard spans kingdoms. The gap behind a skirting board conceals an entire village.</p>
+<p>By day the tone is playful and storybook: a thimble used as a cooking pot, a ladybird as a pet. But by night the world grows eerie and secretive. Soft laughter and lantern-light in a dollhouse can quickly give way to long shadows and whispers of danger in the dark corners of an attic. The mood balances <strong>wonder with mystery</strong>, reminiscent of <em>Coraline</em> or <em>The Borrowers</em> in atmosphere. Every cozy hideaway has its lurking secrets, and even friendly scenes can turn unsettling when the lights go out.</p>
+<p>The <strong>Small Folk</strong> have built their own civilisation beneath the notice of humans. Each household is its own terrain. Kitchen pantries hide larder-thieves and adventurous foragers. Bedroom walls house secret tunnels. Garden sheds become fortresses of tiny societies.</p>
+<hr>
+<h2 id="humans-living-gods">Humans — Living Gods</h2>
+<p>To the small folk, humans are enormous, god-like beings. Usually oblivious, sometimes inadvertently helpful (a dropped coin becomes raw metal for tools), but always dangerous if alerted. A simple neighbourhood street is a perilous black plain to cross, patrolled by the colossal glowing eyes of <strong>The Nightcat</strong> and the rumbling &quot;car-beasts&quot; that rush by at dawn and dusk.</p>
+<h3 id="the-law-of-witness">The Law of Witness</h3>
+<p>A core truth shapes life here: <strong>magic collapses under direct human observation</strong>. If a human gazes directly upon a spell or enchantment, the magic flickers out, dispelled by the oppressive logic of the big world.</p>
+<p>But the horror runs deeper still. <strong>Under the direct gaze of a human, the Small Folk themselves lose their sentience</strong>. They become ordinary insects or mice — mundane animals acting on pure instinct, stripped of will, purpose, and identity. When the human looks away, the small folk return to themselves, remembering the experience with visceral terror and dismay.</p>
+<p>The sensation of their thoughts dissolving. Their personality erased. Their very self snuffed out like a candle. This existential dread — called <em>the Blank</em> — is a core reason the Small Folk regard humans with profound awe and fear. They are living gods who can unmake you with a glance.</p>
+<div class="callout callout-tip">
+<strong>Gameplay implication:</strong> The Law of Witness isn't just flavour — it creates organic tension. A human entering the room mid-spell ends the scene immediately. Clever players will use distractions, timing, and stealth to ensure their magic lands unseen.
+</div>
+<h3 id="children-are-different">Children Are Different</h3>
+<p><strong>Human children do not yet possess this power</strong>. A child's gaze does not strip away magic or mind. Perhaps because children still half-believe in the impossible, or because their perception has not yet hardened into the rigid logic of adulthood.</p>
+<p>This makes children <em>even more dangerous</em> to the small folk. A curious child can see them fully, interact with them, learn their secrets, and potentially harm them — whether through innocent clumsiness or deliberate cruelty. The small folk walk a knife's edge around children, never knowing if they will be helped, betrayed, or accidentally crushed.</p>
+<hr>
+<h2 id="magic">Magic</h2>
+<p>Magic among the small folk is subtle and interwoven with everyday life — a form of <strong>magical realism</strong> that makes the mundane wondrous. Each species of small folk is born with one innate magical trait that reflects their nature.</p>
+<p>These humble talents might seem minor to outsiders, but in the tiny realm they can mean survival or prosperity:</p>
+<ul>
+<li>A <strong>Whisperling</strong> can melt into a whisper of shadow</li>
+<li>A <strong>Wayfarer</strong> can ride a breeze on a dandelion seed</li>
+<li>A <strong>Shellback</strong>'s skin might be tough as bark</li>
+<li>A <strong>Rainling</strong> can call gentle drizzle from a clear sky</li>
+<li>A <strong>Veiling</strong> can blur their outline until human eyes slide away</li>
+</ul>
+<p>Such innate magic is always present in small ways: a Whisperling child might never be found at hide-and-seek, or a Wayfarer might never take harm from a fall, landing feather-light.</p>
+<p>Some small folk dedicate themselves to <strong>focused training or ritual</strong> to unlock greater powers beyond their birth gifts. By study, meditation, or pact, a character can learn advanced magic — building on their racial talent.</p>
+<p>Magic, of course, bends to the <strong>Law of Witness</strong>: a garden shaman might summon fireflies to light a path only once the homeowner's back is turned. An enterprising Whisperling might sneak into a study to swipe a pen, turning invisible in the shadow under the desk the instant a human looks their way. Magic here always has an air of something half-imagined — the moment you try to prove it exists, it's gone.</p>
+<h3 id="magic-is-never-about-big-explosions">Magic is never about big explosions</h3>
+<p>It's rarely about tossing giant fireballs (a candle flame is adventure enough!), but rather <strong>gentle enchantments</strong>: encouraging plants to grow in their hidden grove, speaking with insects or sparrows, weaving protective charms from thread and hope. All magic aligns with the micro-scale:</p>
+<ul>
+<li>A &quot;telekinetic force&quot; spell might slide a coin across a table</li>
+<li>A healing spell might involve grinding human aspirin into fairy dust</li>
+<li>A &quot;firestorm&quot; might tip a nightlight and spill wax</li>
+</ul>
+<p>Each race's magic has a flavour — Whisperlings deal in shadows, echoes, and secrecy; Wayfarers harness wind, weather, and the guidance of far-off places; Shellbacks draw on earth, flora, and resilience.</p>
+<p>And should one push too far too fast, the results can be unpredictable: a miscast spell could, for instance, animate a dozen toy soldiers marching at the wrong time, surely drawing human notice! Caution and creativity go hand in hand.</p>
+<p>Spellcasting often means improvising within constraints: since formal magic schools are unheard of, small folk learn from folklore, old family techniques, or trading secrets at midnight.</p>
+<p>Many magical encounters between small folk occur in secret, unseen corners — the outcome of a duel could hinge on whether the kitchen light suddenly turns on, forcing both combatants' illusions to sputter out in an instant. Such is the whimsical peril of the Hidden World's magic.</p>
+<hr>
+<h2 id="scale-and-the-world">Scale &amp; the World</h2>
+<p>Everything familiar becomes extraordinary at Small Folk scale:</p>
+<table>
+<thead>
+<tr>
+<th>Human object</th>
+<th>Small Folk equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A matchstick</td>
+<td>A six-foot torch</td>
+</tr>
+<tr>
+<td>A thimble</td>
+<td>A cooking cauldron</td>
+</tr>
+<tr>
+<td>A coin</td>
+<td>Raw metal for weapons or shields</td>
+</tr>
+<tr>
+<td>A housecat</td>
+<td>A legendary monster</td>
+</tr>
+<tr>
+<td>A child's toy castle</td>
+<td>A real fortress</td>
+</tr>
+<tr>
+<td>The gap under a door</td>
+<td>A mountain pass</td>
+</tr>
+<tr>
+<td>A garden pond</td>
+<td>An inland sea</td>
+</tr>
+<tr>
+<td>An oak tree</td>
+<td>A vast continent</td>
+</tr>
+</tbody>
+</table>
+<p>The small folk survive by staying out of sight, operating in the margins where wonder still thrives. They are the hidden protagonists of a world within our own, striving for community and adventure in the shadow of humanity's vast and terrifying presence.</p>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestiary — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top ">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top active">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="bestiary">Bestiary</h1>
+            <p class="subtitle">The creatures of the hidden world — from nuisances to nightmares</p>
+          </header>
+        
+        <p>The hidden world of the small folk is teeming with creatures, both mundane and magical. In the garden, what humans consider pests or pets become dragons and demons. Every creature here is enormous relative to the small folk — even a ladybird can threaten a careless adventurer.</p>
+<hr>
+<h2 id="standard-threats">Standard threats</h2>
+<h3 id="feral-ants">Feral Ants</h3>
+<p><em>Individually a nuisance. In numbers, a disaster.</em></p>
+<p>Feral ants are wild ant colonies that pose a constant low-level danger to small folk. A single ant is merely a tiresome obstacle — roughly the same size as a small folk hero and easily outrun. But feral ants rarely come alone.</p>
+<p><strong>Encounter design:</strong> Treat a group of feral ants as <strong>minions</strong> in combat — individually weak but dangerous in numbers. Every 5 ants form roughly a Level 1 monster equivalent. They act together, moving as a carpet of tiny bodies. They can be killed one-by-one (any hit kills a minion) or swept away in groups by area effects.</p>
+<p><strong>Tactics:</strong> Ants prefer to swarm an isolated target. They can track by scent (pheromones). If a character is covered in food or sugar, ants gain a Boon to notice and chase them.</p>
+<p><strong>Weakness:</strong> Fire (they flee or die en masse), or loud vibrations that disrupt their chemical communication.</p>
+<p><strong>Overall:</strong> Feral ants are more of an environmental complication than a primary fight — a good low-level encounter or a hazard layered into a different scene.</p>
+<hr>
+<h3 id="hunting-spider">Hunting Spider</h3>
+<p><em>The monster under the bed. Literally.</em></p>
+<p>&quot;Where one web ends, another begins&quot; — an old small folk saying. Hunting spiders are agile, sight-based predators that can match or outpace a small folk hero in a flat sprint. They don't build webs to wait — they stalk.</p>
+<div class="stat-block">
+<h4 id="hunting-spider-level-2-3-monster">Hunting Spider — Level 2–3 Monster</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">HP</span><span class="stat-value">18–24</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">None (high DEX)</span></div>
+  <div class="stat-item"><span class="stat-label">Speed</span><span class="stat-value">8 (any surface)</span></div>
+</div>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Advantaged save</span><span class="stat-value">DEX</span></div>
+  <div class="stat-item"><span class="stat-label">Disadvantaged save</span><span class="stat-value">WIL</span></div>
+</div>
+</div>
+<p><strong>Venomous Bite (Attack, Reach 1):</strong> 1d8 + STR damage, plus the target must make a STR save. On failure, the target gains <strong>Poisoned</strong> (Bane on all rolls; 1d4 damage at start of each turn for 3 rounds).</p>
+<p><strong>Ambush Pounce:</strong> If the spider attacks from hiding (dropping from above, springing from shadow), it has a +1 Boon on its first attack roll and deals +1d6 bonus damage on a hit.</p>
+<p><strong>Fast Retreat (Reaction):</strong> After biting, the spider can move half its speed away without provoking Opportunity Attacks.</p>
+<p><strong>Climbing:</strong> Ignores difficult terrain on vertical or upside-down surfaces. Heroes suffer a Bane to hit it while it's on the ceiling.</p>
+<p><strong>Tactics:</strong> A hunting spider will single out what looks like the easiest prey (smallest hero, one separated from others). It will retreat if reduced to half HP and return after repositioning.</p>
+<p><strong>Loot:</strong> Spider venom can be harvested (2 doses if carefully done — DEX test required). Spider legs can be used as spear tips or crafting materials.</p>
+<hr>
+<h3 id="silent-choir-thralls">Silent Choir Thralls</h3>
+<p><em>Controlled corpses. Slow, silent, and remorseless.</em></p>
+<img src="/assets/images/species/thralls.png" alt="Silent Choir Thralls — controlled corpse soldiers" class="role-image">
+<p>The <strong>Silent Choir</strong> is a sinister faction rumoured to practice necromancy or dark hive-mind control. Their foot soldiers — &quot;thralls&quot; — are small folk or insect bodies reanimated by the Choir's will, serving as mindless guards and shock troops.</p>
+<div class="stat-block">
+<h4 id="small-folk-thrall-level-1-flunky">Small Folk Thrall — Level 1 Flunky</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">HP</span><span class="stat-value">10</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Medium (undead resilience)</span></div>
+  <div class="stat-item"><span class="stat-label">Speed</span><span class="stat-value">4</span></div>
+</div>
+</div>
+<p><strong>Undead Resilience:</strong> Thralls don't feel pain. They have Medium armour from sheer toughness (ignore damage mods; take half dice damage from non-crits). They cannot be Frightened, Dazed, or Distracted by social effects.</p>
+<p><strong>Single-minded:</strong> Thralls never check morale and never hesitate. If a limb is severed they keep coming with what's left.</p>
+<p><strong>Grasp and Choke (Attack, Reach 1):</strong> 1d4 + STR damage. Target must make a STR save or be Grappled.</p>
+<p><strong>Weakness — Light:</strong> Thralls are vulnerable to bright light. A direct flash of sunlight or a Firefly Lantern shone directly at them imposes a Bane on all their rolls. The control mechanism may be disrupted by human observation (the Law of Witness may affect Choir magic at GM's discretion).</p>
+<p><strong>Encounter design:</strong> A couple of thralls make a great spooky guard encounter in a crypt or abandoned dollhouse. They instil fear without necessarily being an overwhelming threat — their silence and relentlessness are as dangerous as their statistics.</p>
+<hr>
+<h2 id="unique-bosses">Unique bosses</h2>
+<h3 id="whisper-king">Whisper-King</h3>
+<p><em>The nightmare at the heart of the shadows. A figure of myth and dread.</em></p>
+<p>The Whisper-King is supposedly a once-benevolent leader of the Whisperlings who delved too deep into the art of sound and echo-magic, becoming something other than small folk. He lives in a labyrinth of whispers and stolen voices, controlling others through sound alone.</p>
+<p><strong>Personality:</strong> The Whisper-King is cold, calculating, and ancient. He rarely confronts foes directly — he manipulates, deceives, and demoralises. He knows things he shouldn't know. He speaks of your fears before you've mentioned them.</p>
+<div class="stat-block">
+<h4 id="whisper-king-legendary-monster-level-8">Whisper-King — Legendary Monster (Level 8+)</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">HP</span><span class="stat-value">60–80</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">None (misdirection)</span></div>
+  <div class="stat-item"><span class="stat-label">Speed</span><span class="stat-value">7</span></div>
+</div>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Legendary</span><span class="stat-value">Acts after each hero's turn</span></div>
+</div>
+</div>
+<p><strong>Innate Whisper Magic:</strong> He commands sound and shadow. He can create illusory duplicates to impose Banes on attackers (heroes attack at −1 Bane per duplicate active, up to −3). Creating a duplicate costs 1 Legendary action.</p>
+<p><strong>Voice of Command (Action):</strong> Issue a one-word command in a haunting whisper. One hero must save WIL or be Charmed/Compelled to perform that one-word action immediately (e.g., &quot;Freeze&quot;, &quot;Run&quot;, &quot;Drop&quot;).</p>
+<p><strong>Knowledge of Fears:</strong> He has learned secrets about the heroes via his network. In combat, he might call out specific personal fears, forcing WIL saves against the Frightened condition.</p>
+<p><strong>Legendary Actions (after each hero's turn):</strong> <em>Whisper Dodge</em> — move up to 2 spaces without provoking reactions; <em>Echo</em> — one hero must save WIL or take 1d6 psychic damage as their own voice is twisted against them; <em>Summon Thrall</em> — one Small Folk Thrall appears in an adjacent space.</p>
+<p><strong>Last Stand:</strong> At 0 HP, the chorus of whispers around him coalesces to hold his form together briefly. He gets one final action before collapsing.</p>
+<p><strong>Tone:</strong> This fight should feel eerie. Lights flicker. Voices of absent friends fill the air. Consider incorporating a puzzle element — perhaps his true form can only be harmed if heroes silence his illusory echoes first.</p>
+<hr>
+<h3 id="ember-hornet-warlord">Ember Hornet Warlord</h3>
+<p><em>Part general, part natural disaster. All fire.</em></p>
+<img src="/assets/images/species/ember-hornet.png" alt="The Ember Hornet Warlord — part general, part natural disaster" class="role-image">
+<p>The Ember Hornets are a ferocious faction — either actual hornets mutated by magic or a clan of small folk who has fused with hornet spirits. The Warlord leads their raids on gardens and hideouts with savage efficiency.</p>
+<div class="stat-block">
+<h4 id="ember-hornet-warlord-legendary-monster-level-6">Ember Hornet Warlord — Legendary Monster (Level 6+)</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">HP</span><span class="stat-value">50–65</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Heavy (exoskeleton)</span></div>
+  <div class="stat-item"><span class="stat-label">Speed</span><span class="stat-value">8 (flying)</span></div>
+</div>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Legendary</span><span class="stat-value">Acts after each hero's turn</span></div>
+</div>
+</div>
+<p><strong>Fiery Sting (Attack, Reach 2):</strong> 2d6 piercing + 2d6 fire damage. The stinger injects a burning compound; target must make a STR save or gain the <strong>Smouldering</strong> condition (1d4 fire damage at start of each turn for 3 rounds).</p>
+<p><strong>Hornet Swarm Allies:</strong> At the start of battle, 2–3 Hornet minions appear. Killing them all triggers the Warlord's Frenzy Aura.</p>
+<p><strong>Frenzy Aura:</strong> While hornet allies are alive, the Warlord and all hornet minions gain +1 damage on all attacks.</p>
+<p><strong>Fire Control (Action):</strong> Spits fire (or ignites a flammable object). One target within 6 spaces must make a DEX save or take 2d6 fire damage and be set Ablaze (ongoing fire damage each round until extinguished).</p>
+<p><strong>Legendary Defences:</strong> Advantage on saves vs. restraint; immunity to Frightened; resistance to piercing damage.</p>
+<p><strong>Tactics:</strong> He targets ranged attackers first (they can hit him in the air). He uses height to prevent easy retaliation. Consider placing this fight near a lantern or in a burning shed for dramatic atmosphere.</p>
+<p><strong>Note:</strong> If this fight were noticed by humans, they might intervene — a human shooing away a hornet provides a chaotic but potentially useful distraction.</p>
+<hr>
+<h3 id="the-nightcat">The Nightcat</h3>
+<p><em>It is not a cat. It is the end of the world.</em></p>
+<img src="/assets/images/species/nightcat.png" alt="The Nightcat — it is not a cat, it is the end of the world" class="role-image">
+<p>The Nightcat is practically a legend and a local natural disaster rolled into one. To the small folk, it is a colossal, god-like predator — the size of a house, with eyes like twin moons and a purr that shakes the floorboards. It is not malicious. It is simply a cat. That's almost worse.</p>
+<div class="stat-block">
+<h4 id="the-nightcat-boss-scale-massive">The Nightcat — Boss (Scale: Massive)</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">HP</span><span class="stat-value">80–120 (effectively limitless)</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Medium (agility)</span></div>
+  <div class="stat-item"><span class="stat-label">Speed</span><span class="stat-value">12 (crossing entire zones)</span></div>
+</div>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Legendary</span><span class="stat-value">Acts after each hero's turn</span></div>
+</div>
+</div>
+<p><strong>Paw Swipe (Attack, Area):</strong> Affects up to 2 adjacent heroes. 3d6 + STR damage. DEX save for half.</p>
+<p><strong>Grab &amp; Play (Attack):</strong> On a hit, target is Grappled in the cat's mouth (or paw). While grappled this way, 2d6 damage each round. Escape requires a STR test at Disadvantage.</p>
+<p><strong>Senses:</strong> Night vision; sharp hearing. Stealth requires multiple successes or meaningful distractions.</p>
+<p><strong>Legendary Actions:</strong> <em>Pounce</em> — after a hero's turn, if that hero is isolated, the Nightcat immediately moves adjacent and attacks; <em>Bat</em> — knocks a hero Prone and sends them sliding 3 spaces; <em>Yowl</em> — all heroes make WIL saves or become Frightened for 1 round.</p>
+<p><strong>Weakness — Bright Light &amp; Noise:</strong> If caught in sudden bright light (flashlight, flood lamp turning on), the Nightcat is Dazzled (Bane on all rolls) for 2 rounds and may flee.</p>
+<p><strong>Encounter design:</strong> This fight is about <strong>survival and escape</strong>, not victory. Directly killing a cat is almost impossible. The goal is to injure it enough to drive it away, or to exploit terrain (narrow gaps the cat can't reach, heights).</p>
+<p><strong>Human factor:</strong> A human noticing the cat acting strangely might call it or clap to shoo it. This could save the heroes — or draw unwanted human attention to them.</p>
+<hr>
+<h2 id="adversary-design-guidelines">Adversary design guidelines</h2>
+<p>When creating your own foes, follow these principles:</p>
+<ol>
+<li>
+<p><strong>Establish a thematic hook</strong> — every faction should have a clear theme that ties into their mechanics. The Silent Choir are themed around silence and control; their mechanics should reflect that.</p>
+</li>
+<li>
+<p><strong>Scale stat blocks simply</strong> — decide: is this a Minion (one hit kills), a Standard foe, an Elite, or a Boss (Legendary)? Build from there.</p>
+</li>
+<li>
+<p><strong>Use conditions and Boons/Banes</strong> as your primary tools — these make fights dynamic without requiring complex stat blocks.</p>
+</li>
+<li>
+<p><strong>Build in faction weaknesses</strong> — every adversary should have <em>some</em> non-combat way to overcome or at least mitigate them.</p>
+</li>
+<li>
+<p><strong>Balance encounter with party level</strong> — a rough guide is to match total monster levels to total hero levels. Use Legendary mechanics for solo bosses to balance action economy.</p>
+</li>
+</ol>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

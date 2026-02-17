@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top active">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top ">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub ">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="how-to-play">How to Play</h1>
+            <p class="subtitle">Fast, elegant, dice-pool mechanics for tiny adventurers</p>
+          </header>
+        
+        <div class="callout callout-info">
+<strong>Mechanics highlights</strong>
+<ul>
+<li>Roll tests with multiple advantages or disadvantages (like Blades in the Dark)</li>
+<li>Combat rolls almost always hit — the Primary Die in your damage pool determines miss, hit, or crit</li>
+<li>Action and reaction economy based on turn count</li>
+<li>Exploding crits</li>
+<li>Dice fail mitigation with Grit, a fluid currency you spend to improve future odds</li>
+</ul>
+</div>
+<hr>
+<h2 id="1-characters-and-attributes">1. Characters and attributes</h2>
+<p>Heroes have four attributes:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strength (STR) 💪</strong></td>
+<td>Power, toughness, lifting, grappling, STR-based weapons, some physical saves</td>
+</tr>
+<tr>
+<td><strong>Dexterity (DEX) 🎯</strong></td>
+<td>Agility, reflexes, stealth, finesse weapons, bows, Initiative</td>
+</tr>
+<tr>
+<td><strong>Intelligence (INT) 🧠</strong></td>
+<td>Knowledge, analysis, magic theory, investigation</td>
+</tr>
+<tr>
+<td><strong>Will (WIL) ✨</strong></td>
+<td>Courage, presence, empathy, social influence, mental resilience</td>
+</tr>
+</tbody>
+</table>
+<p>Each attribute has two mechanical pieces:</p>
+<ol>
+<li>A <strong>modifier</strong> (for example from −1 to +5) used for damage, spell effects, DCs and anything the game ties directly to attribute scores.</li>
+<li>A <strong>Boon/Bane rating</strong> 🎲 from −3 to +3 that affects how many dice you roll on tests.</li>
+</ol>
+<p>Each class also has:</p>
+<ul>
+<li><strong>Key attributes</strong> — usually two attributes that power most of its class features.</li>
+<li><strong>Attack die type 🎲</strong> — the die size they roll when making attacks (e.g. d6, d8).</li>
+</ul>
+<hr>
+<h2 id="2-core-resolution-attribute-tests-with-boons-and-banes">2. Core resolution: Attribute tests with Boons and Banes</h2>
+<p>Any non-trivial action with an uncertain outcome uses an <strong>attribute test</strong> 🎲.</p>
+<h3 id="2-1-building-the-dice-pool">2.1 Building the dice pool</h3>
+<ol>
+<li><strong>Pick an attribute</strong> — STR, DEX, INT or WIL, whichever matches what they are doing.</li>
+<li><strong>Start at 1d6</strong> — every test starts with a pool of one die.</li>
+<li><strong>Add Boons and Banes</strong> ⚖️
+<ul>
+<li>Start from the attribute's own Boon/Bane rating.</li>
+<li>Add <strong>Boons</strong> ✅ for things that help: strong positioning, good tools, help from another hero, class advantages, clever plans, favourable conditions.</li>
+<li>Add <strong>Banes</strong> ❌ for things that hurt: bad footing, darkness, rushing, being outnumbered, conditions like Frightened, hostile environment.</li>
+</ul>
+</li>
+<li><strong>Cancel out</strong> — Boons and Banes cancel one-for-one. Only the net result matters.</li>
+<li><strong>Set the pool size</strong>
+<ul>
+<li>Net 0: roll <strong>1d6</strong>, keep that result.</li>
+<li>Net +N: roll <strong>1 + N d6</strong> and keep the <strong>highest</strong> single die. ⬆️</li>
+<li>Net −N: roll <strong>1 + N d6</strong> and keep the <strong>lowest</strong> single die. ⬇️</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-2-reading-the-result">2.2 Reading the result</h3>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1–2</strong></td>
+<td>❌ <strong>Failure.</strong> You do not get what you wanted. The GM hits you with a clear consequence.</td>
+</tr>
+<tr>
+<td><strong>3–4</strong></td>
+<td>⚠️ <strong>Success with consequences.</strong> You succeed, but with a cost, complication, or future trouble.</td>
+</tr>
+<tr>
+<td><strong>5–6</strong></td>
+<td>✅ <strong>Full success.</strong> You get what you wanted, no serious downside.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-3-optional-position-and-effect">2.3 Optional: Position and Effect</h3>
+<p>Each action can have:</p>
+<ul>
+<li><strong>Position</strong> — Controlled, Risky, or Desperate. Guides how hard consequences hit on 1–2 or 3–4.</li>
+<li><strong>Effect</strong> — Limited, Standard, or Great. Guides how big the success is on 5–6.</li>
+</ul>
+<p>These do not change the die result — they guide narration.</p>
+<hr>
+<h2 id="3-grit">3. Grit</h2>
+<p><strong>Grit</strong> is a meta-currency that rewards brutal failures and improves your odds on later rolls. Each hero tracks Grit from <strong>0 to 5</strong>.</p>
+<h3 id="3-1-gaining-grit">3.1 Gaining Grit</h3>
+<p>You gain <strong>1 Grit</strong> when:</p>
+<ul>
+<li>You make an attack, attribute test, save, or Initiative roll</li>
+<li>The <strong>kept die</strong> (the single result your pool is judged by) shows a <strong>1</strong></li>
+<li>You are not already at 5 Grit</li>
+</ul>
+<p>You gain at most 1 Grit per roll, even if several dice show 1. You cannot spend freshly earned Grit on the same roll.</p>
+<h3 id="3-2-spending-grit-steady-the-roll">3.2 Spending Grit: Steady the roll</h3>
+<p><strong>Cost:</strong> 1 Grit
+<strong>Timing:</strong> Declared <strong>before</strong> rolling</p>
+<p><strong>Effect</strong> — choose one:</p>
+<ul>
+<li>Add 1 Boon to the roll, or</li>
+<li>Cancel 1 Bane from the roll</li>
+</ul>
+<p>Rules:</p>
+<ul>
+<li>You choose which effect each time.</li>
+<li>You can only use Steady the Roll once per roll.</li>
+<li>You cannot use Grit on the roll that just generated it.</li>
+</ul>
+<hr>
+<h2 id="4-saves">4. Saves</h2>
+<p>When the world acts on a hero and they try to resist (poison, fire, fear, charms, traps, etc.) they make a <strong>save</strong> — which is just an attribute test aimed at resisting an effect.</p>
+<ul>
+<li>Pick STR, DEX, INT or WIL depending on how they resist.</li>
+<li>Build the dice pool with Boons/Banes as normal.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5–6</strong></td>
+<td>✅ You fully resist the effect</td>
+</tr>
+<tr>
+<td><strong>3–4</strong></td>
+<td>⚠️ Partial resistance — half damage, weaker condition, or some downside</td>
+</tr>
+<tr>
+<td><strong>1–2</strong></td>
+<td>❌ You take the full effect</td>
+</tr>
+</tbody>
+</table>
+<p>Each hero has:</p>
+<ul>
+<li>One <strong>advantaged save type</strong> — starts with +1 Boon ✅</li>
+<li>One <strong>disadvantaged save type</strong> — starts with +1 Bane ❌</li>
+<li>Two <strong>neutral</strong> save types</li>
+</ul>
+<p>Situational Boons/Banes stack on top of this.</p>
+<hr>
+<h2 id="5-initiative">5. Initiative</h2>
+<p>Initiative uses a <strong>DEX attribute test</strong> and determines how many actions you start with in the first round.</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Starting actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>5–6</strong></td>
+<td>⚡⚡⚡ 3 actions</td>
+</tr>
+<tr>
+<td><strong>3–4</strong></td>
+<td>⚡⚡ 2 actions</td>
+</tr>
+<tr>
+<td><strong>1–2</strong></td>
+<td>⚡ 1 action</td>
+</tr>
+</tbody>
+</table>
+<p>From the <strong>second round onwards</strong>, everyone gets 3 actions at the start of their turn, regardless of Initiative.</p>
+<p><strong>Ambushes and surprise</strong> are handled with Boons and Banes on the Initiative roll. If the heroes are clearly ambushing, give them extra Boons or just decide they all count as 5–6.</p>
+<p><strong>Turn order</strong> — heroes act in table order, then all enemies, unless you want a more detailed order. In case of ties, heroes act before enemies; ties between heroes are resolved by table order.</p>
+<hr>
+<h2 id="6-actions-and-reactions">6. Actions and reactions</h2>
+<h3 id="6-1-actions">6.1 Actions</h3>
+<p>On your turn you get <strong>3 actions</strong> ⚡ (modified by Initiative on the first round).</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Attack</strong> ⚔️</td>
+<td>1 action</td>
+</tr>
+<tr>
+<td><strong>Cast a spell</strong> 🔮</td>
+<td>Usually 1 action (some powerful spells cost 2 or 3)</td>
+</tr>
+<tr>
+<td><strong>Move</strong> 🏃 up to your Speed</td>
+<td>1 action</td>
+</tr>
+<tr>
+<td><strong>Assess</strong> 👁️ (observe, analyse, find an opening)</td>
+<td>1 action</td>
+</tr>
+<tr>
+<td>Class abilities, items, or special moves</td>
+<td>As listed</td>
+</tr>
+</tbody>
+</table>
+<p>Some strong effects cost <strong>2 or 3 actions</strong>. Multi-action effects can be stretched across turns if you maintain Concentration or the rules for that effect allow it.</p>
+<h3 id="6-2-reactions">6.2 Reactions</h3>
+<p>Reactions are powerful off-turn moves taken during someone else's turn. Each reaction costs <strong>1 action</strong> from your <strong>unused actions this turn</strong>. If you have no actions left, you cannot react.</p>
+<p>Core reactions:</p>
+<table>
+<thead>
+<tr>
+<th>Reaction</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Defend</strong> 🛡️</td>
+<td>Protect yourself or an ally from an attack</td>
+</tr>
+<tr>
+<td><strong>Interpose</strong> 🚧</td>
+<td>Move into harm's way for an ally</td>
+</tr>
+<tr>
+<td><strong>Opportunity Attack</strong> ⚡</td>
+<td>Strike someone who moves carelessly in melee or does something risky</td>
+</tr>
+<tr>
+<td><strong>Help</strong> 🤝</td>
+<td>Give an ally +1 Boon on a roll</td>
+</tr>
+</tbody>
+</table>
+<p>Each type of reaction can be used <strong>at most once per round</strong>.</p>
+<hr>
+<h2 id="7-attacks-and-combat">7. Attacks and combat</h2>
+<h3 id="7-1-making-an-attack">7.1 Making an attack</h3>
+<ol>
+<li>Confirm what you are using (weapon, spell, class ability). That entry tells you which <strong>attribute</strong> it keys off and which <strong>attack die type</strong> you roll.</li>
+<li>Identify the <strong>Primary Die</strong> (normally rolled separately or marked before rolling).</li>
+<li>Check the Primary Die:
+<ul>
+<li><strong>Shows 1</strong> → the attack <strong>misses entirely</strong> ❌</li>
+<li><strong>Shows its maximum value</strong> → <strong>critical hit</strong> 💥</li>
+<li><strong>Otherwise</strong> → the attack hits ✅</li>
+</ul>
+</li>
+<li>On a hit: sum the damage dice, apply any flat modifiers, then apply armour rules.</li>
+</ol>
+<h3 id="7-2-critical-hits">7.2 Critical hits</h3>
+<p>On a critical hit:</p>
+<ul>
+<li><strong>Explode</strong> the Primary Die — add its maximum value, roll it again, keep adding if you roll the maximum again.</li>
+<li>Critical hits <strong>ignore armour</strong> completely.</li>
+<li>Any riders (conditions, pushes, extra effects) can be boosted on crits at GM discretion.</li>
+</ul>
+<h3 id="7-3-multiple-attacks-and-rushed-attacks">7.3 Multiple attacks and rushed attacks</h3>
+<ul>
+<li>The <strong>first attack</strong> each turn is normal.</li>
+<li>Each <strong>additional attack</strong> in that same turn is <strong>rushed</strong> 💨.</li>
+<li>Rushed attacks: roll your attack dice with <strong>+1 Bane</strong> (roll an extra die, keep the lowest).</li>
+<li>Enemies get <strong>+1 Boon</strong> on any saves against a rushed attack's effects.</li>
+</ul>
+<p>Disadvantage stacks if you attack three or more times in one turn.</p>
+<hr>
+<h2 id="8-armour-and-damage">8. Armour and damage</h2>
+<table>
+<thead>
+<tr>
+<th>Armour type</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unarmoured</strong> 👕</td>
+<td>Take full damage</td>
+</tr>
+<tr>
+<td><strong>Medium armour</strong> 🦺</td>
+<td>Take only dice damage — ignore flat modifiers</td>
+</tr>
+<tr>
+<td><strong>Heavy armour</strong> 🛡️</td>
+<td>Take half dice damage (round down) — ignore flat modifiers</td>
+</tr>
+</tbody>
+</table>
+<p>Critical hits and vulnerabilities <strong>ignore armour</strong>.</p>
+<ul>
+<li><strong>Resistance</strong> 🛡️ — halve damage <em>after</em> armour.</li>
+<li><strong>Vulnerability</strong> 💔 — double damage, or treat the hit as an automatic crit.</li>
+</ul>
+<hr>
+<h2 id="9-hp-wounds-and-dying">9. HP, Wounds and dying</h2>
+<h3 id="9-1-hit-points">9.1 Hit Points</h3>
+<p>Hit Points (HP) represent your capacity to take physical punishment. Damage reduces HP but HP cannot go below 0.</p>
+<h3 id="9-2-wounds">9.2 Wounds</h3>
+<p>When your HP drops to <strong>0</strong>:</p>
+<ol>
+<li>Set HP to 0.</li>
+<li>Gain <strong>1 Wound</strong> 🩸.</li>
+<li>Gain the <strong>Dying</strong> condition ☠️.</li>
+</ol>
+<p><strong>6 Wounds = death</strong> (or a lower cap for a grittier game).</p>
+<h3 id="9-3-dying">9.3 Dying</h3>
+<p>While Dying:</p>
+<ul>
+<li>You can only take <strong>1 action per turn</strong>.</li>
+<li>You lose Concentration on ongoing effects.</li>
+<li>Strenuous actions may force a <strong>STR save</strong>; on failure you gain <strong>1 extra Wound</strong>.</li>
+</ul>
+<p>If you take damage while Dying:</p>
+<ul>
+<li>Gain <strong>2 Wounds</strong> — or <strong>3 Wounds</strong> if the hit is a critical.</li>
+</ul>
+<blockquote>
+<p>This makes it very dangerous to stay on the ground while enemies are still active.</p>
+</blockquote>
+<h3 id="9-4-rests-and-healing">9.4 Rests and healing</h3>
+<p><strong>Field Rest</strong> (short rest) ⛺</p>
+<ul>
+<li>Spend Hit Dice to restore HP.</li>
+<li>Hit Dice spent are gone until a Safe Rest.</li>
+</ul>
+<p><strong>Safe Rest</strong> (long rest in safe conditions) 🛏️</p>
+<ul>
+<li>Restore all HP.</li>
+<li>Restore all spent Hit Dice.</li>
+<li>Restore all spell resources.</li>
+<li>Heal <strong>1 Wound</strong> 🩹.</li>
+</ul>
+<p>Magical healing and class features restore HP or remove conditions according to their own rules.</p>
+<hr>
+<h2 id="10-movement-range-and-conditions">10. Movement, range and conditions</h2>
+<h3 id="10-1-movement">10.1 Movement</h3>
+<ul>
+<li>A typical character has <strong>Speed 6</strong>.</li>
+<li>Spending 1 action to Move lets you move up to your Speed.</li>
+<li><strong>Difficult terrain</strong> usually halves movement for that path.</li>
+</ul>
+<h3 id="10-2-range">10.2 Range</h3>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Close</strong> (melee) ⚔️</td>
+<td>Within reach</td>
+</tr>
+<tr>
+<td><strong>Mid</strong></td>
+<td>A short move away 🎯</td>
+</tr>
+<tr>
+<td><strong>Far</strong></td>
+<td>Requires several moves or special abilities 🏹</td>
+</tr>
+</tbody>
+</table>
+<p>Weapons and spells list their effective ranges in either system.</p>
+<h3 id="10-3-conditions">10.3 Conditions</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prone</strong> 🤕</td>
+<td>Bane to melee attacks you make; Boon to melee attacks against you</td>
+</tr>
+<tr>
+<td><strong>Grappled</strong> 🤼</td>
+<td>Speed 0; Banes on some tests; STR test to break free</td>
+</tr>
+<tr>
+<td><strong>Restrained</strong> ⛓️</td>
+<td>Speed 0; Banes on attacks and DEX saves</td>
+</tr>
+<tr>
+<td><strong>Blinded</strong> 🙈</td>
+<td>Bane on attacks and perception; others may have Boon to hit you</td>
+</tr>
+<tr>
+<td><strong>Frightened</strong> 😱</td>
+<td>Bane on rolls while the source of fear is visible</td>
+</tr>
+<tr>
+<td><strong>Dazed</strong> 😵</td>
+<td>Lose 1 action on your next turn</td>
+</tr>
+<tr>
+<td><strong>Dying</strong> ☠️</td>
+<td>1 action per turn; extra Wounds from damage</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="11-monsters-and-minions">11. Monsters and minions</h2>
+<p>Monsters use the same core mechanics:</p>
+<ul>
+<li>Attributes (and Boon/Bane ratings if desired)</li>
+<li>HP, Wounds, armour type, conditions</li>
+<li>Attacks with their own damage dice and riders</li>
+<li>Saves as attribute tests</li>
+</ul>
+<p><strong>Minions</strong> are simplified enemies:</p>
+<ul>
+<li>Any hit that deals damage kills a minion.</li>
+<li>Minions do <strong>not</strong> gain Grit and usually do <strong>not</strong> crit.</li>
+<li>Groups of minions can be removed in batches when heroes deal big area damage.</li>
+</ul>
+<p>Elite monsters can be given Grit and heroic reactions to feel closer to PCs.</p>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

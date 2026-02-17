@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whisperlings (Sussurranti) — The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood.">
+  <script src="/assets/theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">The Crack in the Wall</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top ">Home</a>
+        </li>
+
+        <li class="nav-section-label">The Game</li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top ">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world" class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods" class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic" class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top ">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes" class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes" class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit" class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves" class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative" class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions" class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat" class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage" class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying" class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions" class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions" class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top active">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub active">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/" class="nav-link nav-sub ">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/" class="nav-link nav-sub ">Shellbacks</a></li>
+            <li><a href="/species/rainlings/" class="nav-link nav-sub ">Rainlings</a></li>
+            <li><a href="/species/veilings/" class="nav-link nav-sub ">Veilings</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-section-label">Play</li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top ">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools" class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear" class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity" class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top ">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats" class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses" class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top ">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses" class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations" class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions" class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks" class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression" class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-footer">
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
+      </div>
+
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        
+          <header class="page-header">
+            <h1 id="whisperlings-sussurranti">Whisperlings (Sussurranti)</h1>
+            <p class="subtitle">Secretive listeners and lore-keepers of the hidden world</p>
+          </header>
+        
+        <img src="/assets/images/species/whisperlings.png" alt="A Whisperling scout moving silently through shadows" class="species-hero">
+<p>Silently padding through hollow walls and dusty attics, <strong>Whisperlings</strong> are the secretive listeners and lore-keepers of the small folk. They earned their name because they always seem to know the house's secrets — catching murmurs through vents, learning human routines, trading in rumours with other small folk.</p>
+<p>Physically, whisperlings are slight, pale or grey-skinned with large light-sensitive eyes adapted to darkness. They dress in mottled tones of cobweb, cloth scrap and ink, helping them blend into shadows. Culturally, they are cautious and clever: a Whisperling community might live behind the walls of an old house library, holding whispered council by candlelight and venturing out only when the floorboards cease creaking above.</p>
+<p>Of all small folk, whisperlings have the strongest taboo about being seen — they treat it almost as a sin, training their young to freeze at the slightest hint of human gaze. In compensation, they are generous with information and warnings, often sending messengers in secret to help others avoid danger (for a price or favour, of course).</p>
+<hr>
+<h2 id="racial-traits">Racial traits</h2>
+<div class="stat-block">
+<h4 id="whisperling-racial-traits">Whisperling — Racial Traits</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Hit Die</span><span class="stat-value">d6</span></div>
+  <div class="stat-item"><span class="stat-label">Key Attributes</span><span class="stat-value">DEX, INT</span></div>
+  <div class="stat-item"><span class="stat-label">Size</span><span class="stat-value">Tiny (~1–2 inches)</span></div>
+</div>
+</div>
+<p><strong>Shadowmeld</strong> — When in dim light or darkness and not under direct human observation, a Whisperling gains a <strong>+1 Boon on stealth checks</strong> by default. Their very skin and hair seem to dim and blur into the background.</p>
+<p><strong>Keen Eavesdropper</strong> — Their large ears and attunement to vibrations grant them a <strong>+1 Boon on listening tests</strong>. A Whisperling can hear conversations through walls if within a few inches of them.</p>
+<p><strong>Frail Frame</strong> — Physically less robust, Whisperlings suffer a <strong>Bane on saves against strong winds or being carried off</strong> by larger creatures — they're light enough that even a housecat's pounce can send them tumbling. However, their reflexes are sharp, granting them a <strong>Boon on DEX saves to avoid traps or falling objects</strong>.</p>
+<hr>
+<h2 id="roles">Roles</h2>
+<p>Whisperlings have two primary callings: the <strong>Echo-Walker</strong> and the <strong>Shadow-Teller</strong>.</p>
+<hr>
+<h2 id="echo-walker">Echo-Walker</h2>
+<p><em>The scout, infiltrator, and master of sonic trickery.</em></p>
+<p>Echo-Walkers pad silently through the voids between walls, acting as spies and messengers between small folk enclaves. They earned the title because they not only move quietly, but can <em>walk echoes</em> — imitating and throwing sounds to mislead or distract foes.</p>
+<p>Mechanically, the Echo-Walker is a <strong>rogue or ranger at micro-scale</strong>, excelling at sneaking and confusing enemies. They rely on DEX for agility and INT for clever tactics, and often impose <em>Distracted</em> or <em>Vulnerable</em> conditions on targets by cunning maneuvers.</p>
+<div class="stat-block">
+<h4 id="echo-walker-class-stats">Echo-Walker — Class Stats</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Attack Die</span><span class="stat-value">d6</span></div>
+  <div class="stat-item"><span class="stat-label">Primary Stats</span><span class="stat-value">DEX, INT</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Light</span></div>
+</div>
+</div>
+<h3 id="class-features-levels-1-10">Class features (Levels 1–10)</h3>
+<ul class="level-list">
+<li class="level-item">
+<span class="level-num">Level 1</span>
+<div class="level-content">
+<strong>Silent Step & Echo Imitation</strong>
+<p>You can move your full speed while Stealthing without penalty. <em>Muffled Step (Passive):</em> You ignore movement-related Banes on stealth. <em>Throw Voice (Action, 1/turn):</em> Create a minor sound at a location within 6 spaces. Enemies must make an INT save or treat the sound as real — granting you or an ally a Boon on your next stealth or deception roll against those enemies.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 2</span>
+<div class="level-content">
+<strong>Cat's Eyes</strong>
+<p>You gain low-light vision; darkness imposes no Bane on your perception within short range. You also gain proficiency in Assess. When you Assess an enemy, you learn one of its weaknesses or vulnerabilities (if any).</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 3</span>
+<div class="level-content">
+<strong>Echo Phantom (Action, 1/encounter)</strong>
+<p>You create an illusory double or noise phantasm. Choose one target within 8 spaces that can hear. They must pass a WIL save or gain the <strong>Distracted</strong> condition (loses 1 action on their next turn; attackers gain a Boon until then).</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 4</span>
+<div class="level-content">
+<strong>Attribute Improvement</strong>
+<p>Increase DEX or INT by +1. Your Boon rating for stealth checks also increases by +1.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 5</span>
+<div class="level-content">
+<strong>Whisper in the Dark</strong>
+<p>You and allies you train can communicate in a secret code of taps and whispers that travels along walls or pipes. As long as you're in the same structure, you can send short messages to any other Echo-Walker or Whisperling who knows the code. Once per day you can cast a minor <em>invisibility</em> charm on yourself lasting one minute or until you attack — it breaks immediately if a human looks directly at you.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 6</span>
+<div class="level-content">
+<strong>Shadow Skirmisher</strong>
+<p>You have advantage on Initiative rolls in dim light or darkness (start combat with an extra action ⚡ if you succeed on a DEX test in an ambush). When you attack an enemy who hasn't detected you or who is Distracted, your attack deals +1d6 extra damage.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 7</span>
+<div class="level-content">
+<strong>Echo-Step (Action, 1/Safe Rest)</strong>
+<p>You harness magic to momentarily become sound and shadow. Teleport up to 5 spaces to a location you can see, as long as both start and end points are in darkness or cover. After using Echo-Step, you gain a Haste effect for one round (one extra action ⚡ used for movement or Assess only).</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 8</span>
+<div class="level-content">
+<strong>Attribute Improvement</strong>
+<p>Increase DEX or INT by +1. Your Throw Voice can now maintain two separate illusory sounds at once, and can affect two targets in a round.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 9</span>
+<div class="level-content">
+<strong>Cloak of Whispers</strong>
+<p>A magical cloak woven from spider silk grants constant <strong>Camouflage</strong>: observers must succeed an INT check with a Bane to notice you while you're still in a shadowy environment. Once per day (Action), cast <em>Silence</em> on yourself for up to 3 rounds — you make no noise and neither do your actions.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 10</span>
+<div class="level-content">
+<strong>Master of Murmurs</strong>
+<p>Permanent Boon on all perception checks involving sound or tremors. Once per day (Action): <em>Resonant Mirage</em> — create an elaborate illusory soundscape affecting up to a medium room, lasting up to 1 minute. Can simulate conversations, rushing small folk, or frightening sounds. Enemies can make an INT save to see through it, but do so at disadvantage if they only heard the sound.</p>
+</div>
+</li>
+</ul>
+<hr>
+<h2 id="shadow-teller">Shadow-Teller</h2>
+<p><em>The storyteller, lore-keeper, and bard of the hidden world.</em></p>
+<p>Shadow-Tellers are the keepers of small folk history, weaving tales from the darkness to inspire, protect, and enchant. Where Echo-Walkers use stealth for survival, Shadow-Tellers use <em>story</em> — they know that a well-told tale can calm a frightened ally, charm a suspicious enemy, or reveal a truth hidden for generations.</p>
+<p>Mechanically, the Shadow-Teller is a <strong>support and control class</strong>, relying on WIL for social influence and INT for lore. They buff allies, charm enemies, and manipulate the narrative of encounters.</p>
+<div class="stat-block">
+<h4 id="shadow-teller-class-stats">Shadow-Teller — Class Stats</h4>
+<div class="stat-row">
+  <div class="stat-item"><span class="stat-label">Attack Die</span><span class="stat-value">d6</span></div>
+  <div class="stat-item"><span class="stat-label">Primary Stats</span><span class="stat-value">WIL, INT</span></div>
+  <div class="stat-item"><span class="stat-label">Armour</span><span class="stat-value">Light</span></div>
+</div>
+</div>
+<h3 id="class-features-levels-1-10-2">Class features (Levels 1–10)</h3>
+<ul class="level-list">
+<li class="level-item">
+<span class="level-num">Level 1</span>
+<div class="level-content">
+<strong>Tales of Old & Ghostly Whispers</strong>
+<p>You know small folk folktales and a smattering of "words of power" — spoken phrases that carry minor magical weight. Once per encounter, reciting a relevant tale grants one ally a <strong>+1 Boon</strong> on their next roll. You also have an innate Boon on WIL-based social tests against other small folk who share your cultural heritage.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 2</span>
+<div class="level-content">
+<strong>Hearth Light</strong>
+<p>You carry a tiny lantern or candle imbued with protective magic. While it's lit and on your person, you and nearby allies within 2 spaces gain a <strong>+1 Boon on WIL saves</strong> against fear and despair. As an action you can dim it to a faint glow that only small folk can see.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 3</span>
+<div class="level-content">
+<strong>Shadow Play (Action, 1/encounter)</strong>
+<p>You perform an enchanted storytelling using shadows cast on a surface. Choose up to three creatures who can see the shadow display. Each must make a WIL save or become <strong>Enthralled</strong> (they cannot take aggressive actions toward you or your allies this round, and may offer information if approached). The effect ends if any ally attacks them.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 4</span>
+<div class="level-content">
+<strong>Attribute Improvement</strong>
+<p>Increase WIL or INT by +1. Additionally, choose one of: (a) your voice can carry a calming or frightening tone as a free action once per scene, or (b) you learn to read the emotional resonance of places — you can sense the strongest emotion that occurred in a room in the past day.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 5</span>
+<div class="level-content">
+<strong>Lullaby of the Crickets (Action, 1/day)</strong>
+<p>You sing a gentle, hypnotic lullaby. All creatures within 6 spaces who can hear must make a WIL save. On failure, non-hostile creatures fall into a light sleep for up to 10 minutes; hostile creatures are <strong>Dazed</strong> (−1 action) for 1 round. The lullaby ends immediately if anyone makes noise or attacks.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 6</span>
+<div class="level-content">
+<strong>Binding Words (Action)</strong>
+<p>Your voice carries magical authority. Choose one creature within 6 spaces that can understand you. They must make a WIL save or be <strong>Compelled</strong> to follow one simple instruction (no more than a sentence, nothing suicidal). Effect lasts until they complete the instruction or take damage.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 7</span>
+<div class="level-content">
+<strong>Umbral Covenant</strong>
+<p>You have made a pact with the shadows themselves. Once per day, you can enter a shadow and emerge from any other shadow within 20 spaces (as if teleporting). While inside a shadow, you are immune to mundane detection for up to 1 minute. You also gain a permanent Boon on all WIL saves.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 8</span>
+<div class="level-content">
+<strong>Attribute Improvement</strong>
+<p>Increase WIL or INT by +1. Additionally, your Binding Words can now affect two targets simultaneously.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 9</span>
+<div class="level-content">
+<strong>Sanctuary of Story (Passive)</strong>
+<p>When you begin a Safe Rest and spend 10 minutes telling a calming tale or soothing song, all heroes present heal an additional 1 Wound (in addition to the standard 1 Wound from the Safe Rest). This benefit applies once per Safe Rest.</p>
+</div>
+</li>
+<li class="level-item">
+<span class="level-num">Level 10</span>
+<div class="level-content">
+<strong>Master Shadow-Teller</strong>
+<p>Your words can reshape reality in the hidden world. Once per session you can declare a <em>True Tale</em> — a statement about a fact in the hidden world. If it could plausibly be true, it <em>becomes</em> true within the scope of your current location (a secret door exists; a creature hesitates; a danger is averted). The GM has final say on scope, but should lean toward granting it for narrative richness.</p>
+</div>
+</li>
+</ul>
+
+      </article>
+    </main>
+
+  </div>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>
