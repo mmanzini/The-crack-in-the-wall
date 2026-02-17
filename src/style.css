@@ -1,5 +1,5 @@
 /* ============================================================
-   Tiny Shadows — Design System
+   The Crack in the Wall — Design System
    Clean, typographic, content-first.
    Inspired by darioamodei.com and claude.com/blog
    ============================================================ */
@@ -114,7 +114,7 @@ body {
 }
 
 .nav-section-label {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 700;
   color: var(--text-faint);
@@ -126,7 +126,7 @@ body {
 .nav-link {
   display: block;
   padding: 0.3rem 1.25rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1rem;
   color: var(--text);               /* black — top-level links */
   font-weight: 700;                 /* bold — top-level links */
@@ -608,29 +608,70 @@ article.prose > h1:first-child {
   margin-top: auto;
 }
 
-.theme-toggle {
+/* Theme switch */
+.theme-switch {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  background: none;
-  border: none;
+  gap: 0.6rem;
   cursor: pointer;
-  font-family: var(--font-serif);
-  font-size: 0.92rem;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
   color: var(--text-muted);
-  padding: 0.3rem 0;
-  transition: color 0.15s;
-  width: 100%;
-  text-align: left;
+  user-select: none;
 }
 
-.theme-toggle:hover {
-  color: var(--accent);
-}
-
-.theme-toggle-icon {
+.theme-switch-icon {
   font-size: 1rem;
   line-height: 1;
+  width: 1.1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Hidden native checkbox */
+.theme-switch-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Track */
+.theme-switch-track {
+  position: relative;
+  display: inline-block;
+  width: 2.2rem;
+  height: 1.2rem;
+  background: var(--border);
+  border-radius: 999px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+/* Thumb */
+.theme-switch-thumb {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--text-muted);
+  border-radius: 50%;
+  transition: transform 0.2s, background 0.2s;
+  pointer-events: none;
+}
+
+.theme-switch-input:checked + .theme-switch-thumb {
+  transform: translateX(1rem);
+}
+
+/* Active (dark) state */
+.theme-switch-track:has(.theme-switch-input:checked) {
+  background: var(--accent);
+}
+
+.theme-switch-track:has(.theme-switch-input:checked) .theme-switch-thumb {
+  background: #fff;
 }
 
 /* --- Dark mode -------------------------------------------- */

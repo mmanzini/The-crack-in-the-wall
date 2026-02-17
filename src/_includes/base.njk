@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% if title %}{{ title }} — {% endif %}Tiny Shadows</title>
-  <meta name="description" content="Tiny Shadows — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood." />
+  <title>{% if title %}{{ title }} — {% endif %}The Crack in the Wall</title>
+  <meta name="description" content="The Crack in the Wall — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood." />
   <script src="/assets/theme.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <nav class="sidebar" aria-label="Site navigation">
       <div class="sidebar-header">
         <a href="/" class="site-title">
-          <span class="site-title-main">Tiny Shadows</span>
+          <span class="site-title-main">The Crack in the Wall</span>
           <span class="site-badge">v0.2 Beta</span>
         </a>
       </div>
@@ -45,10 +45,14 @@
       </ul>
 
       <div class="sidebar-footer">
-        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Switch to dark mode">
-          <span id="theme-icon" class="theme-toggle-icon">&#9790;</span>
-          <span id="theme-label">Dark mode</span>
-        </button>
+        <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+          <span id="theme-icon" class="theme-switch-icon">&#9790;</span>
+          <span class="theme-switch-track">
+            <input type="checkbox" id="theme-checkbox" class="theme-switch-input" onchange="toggleTheme()">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span id="theme-label" class="theme-switch-label">Dark mode</span>
+        </label>
       </div>
 
     </nav>

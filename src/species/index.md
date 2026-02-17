@@ -5,7 +5,7 @@ subtitle: Five peoples, ten roles — your origin is your calling
 nav_order: 3
 ---
 
-In Tiny Shadows, a hero's origin **species is their class**. Each species has unique racial traits and two distinct role variants that serve as subclasses. All members of a species share common abilities, but each individual trains in one of two ways.
+In The Crack in the Wall, a hero's origin **species is their class**. Each species has unique racial traits and two distinct role variants that serve as subclasses. All members of a species share common abilities, but each individual trains in one of two ways.
 
 All small folk heroes use the same attribute system (STR, DEX, INT, WIL) and Boon/Bane mechanics for tests.
 

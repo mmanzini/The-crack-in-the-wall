@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Tiny Shadows
+title: The Crack in the Wall
 subtitle: A kids-friendly tabletop RPG about tiny folk living hidden in our world
 nav_order: 0
 ---
@@ -14,7 +14,7 @@ The mood balances **wonder with mystery** — reminiscent of *Coraline* or *The 
 ---
 
 <div class="callout callout-warn">
-<strong>⚠ Beta Version 0.2</strong> — Tiny Shadows is a work in progress. Some sections are incomplete (notably the Mistweaver class and some rules edge cases). Play it, break it, and let us know what you find!
+<strong>⚠ Beta Version 0.2</strong> — The Crack in the Wall is a work in progress. Some sections are incomplete (notably the Mistweaver class and some rules edge cases). Play it, break it, and let us know what you find!
 </div>
 
 ## Explore the book

@@ -4,8 +4,8 @@
 
   function applyTheme(dark) {
     root.classList.toggle('dark', dark);
-    var btn = document.getElementById('theme-toggle');
-    if (btn) btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    var cb = document.getElementById('theme-checkbox');
+    if (cb) cb.checked = dark;
     var icon = document.getElementById('theme-icon');
     if (icon) icon.textContent = dark ? '\u2600' : '\u263E';
     var label = document.getElementById('theme-label');
