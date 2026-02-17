@@ -577,20 +577,22 @@ article.prose > h1:first-child {
 
 .species-hero {
   width: 100%;
-  max-width: 480px;
+  max-width: var(--content-max);  /* fills the full text column */
   height: auto;
-  border-radius: 8px;
-  margin: 0 0 2rem 0;
+  border-radius: 12px;
+  margin: 0 0 2.5rem 0;
   display: block;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .role-image {
   width: 100%;
-  max-width: 320px;
+  max-width: var(--content-max);  /* matches hero — full text column */
   height: auto;
-  border-radius: 6px;
-  margin: 0 0 1.5rem 0;
+  border-radius: 12px;
+  margin: 2rem 0 1.5rem 0;
   display: block;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* --- Print ------------------------------------------------- */
