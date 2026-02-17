@@ -24,24 +24,111 @@
       </div>
 
       <ul class="nav-list">
-        <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+
+        <!-- Home — no sub-items -->
+        <li class="nav-accordion-section" data-section="home">
+          <a href="/" class="nav-link nav-link-top {% if page.url == '/' %}active{% endif %}">Home</a>
+        </li>
 
         <li class="nav-section-label">The Game</li>
-        <li><a href="/setting/" class="nav-link {% if '/setting' in page.url %}active{% endif %}">Setting</a></li>
-        <li><a href="/rules/" class="nav-link {% if '/rules' in page.url %}active{% endif %}">Rules (Crux System)</a></li>
+
+        <!-- Setting -->
+        <li class="nav-accordion-section" data-section="setting">
+          <a href="/setting/" class="nav-link nav-link-top {% if '/setting' in page.url %}active{% endif %}">
+            Setting
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/setting/#the-hidden-world"    class="nav-link nav-sub">The Hidden World</a></li>
+            <li><a href="/setting/#humans-living-gods"  class="nav-link nav-sub">Humans — Living Gods</a></li>
+            <li><a href="/setting/#magic"               class="nav-link nav-sub">Magic</a></li>
+            <li><a href="/setting/#scale-and-the-world" class="nav-link nav-sub">Scale &amp; the World</a></li>
+          </ul>
+        </li>
+
+        <!-- How to Play (Rules) -->
+        <li class="nav-accordion-section" data-section="rules">
+          <a href="/rules/" class="nav-link nav-link-top {% if '/rules' in page.url %}active{% endif %}">
+            How to Play
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/rules/#1-characters-and-attributes"                             class="nav-link nav-sub">1. Characters &amp; Attributes</a></li>
+            <li><a href="/rules/#2-core-resolution-attribute-tests-with-boons-and-banes"  class="nav-link nav-sub">2. Core Resolution</a></li>
+            <li><a href="/rules/#3-grit"                                                  class="nav-link nav-sub">3. Grit</a></li>
+            <li><a href="/rules/#4-saves"                                                 class="nav-link nav-sub">4. Saves</a></li>
+            <li><a href="/rules/#5-initiative"                                            class="nav-link nav-sub">5. Initiative</a></li>
+            <li><a href="/rules/#6-actions-and-reactions"                                 class="nav-link nav-sub">6. Actions &amp; Reactions</a></li>
+            <li><a href="/rules/#7-attacks-and-combat"                                    class="nav-link nav-sub">7. Attacks &amp; Combat</a></li>
+            <li><a href="/rules/#8-armour-and-damage"                                     class="nav-link nav-sub">8. Armour &amp; Damage</a></li>
+            <li><a href="/rules/#9-hp-wounds-and-dying"                                   class="nav-link nav-sub">9. HP, Wounds &amp; Dying</a></li>
+            <li><a href="/rules/#10-movement-range-and-conditions"                        class="nav-link nav-sub">10. Movement &amp; Conditions</a></li>
+            <li><a href="/rules/#11-monsters-and-minions"                                 class="nav-link nav-sub">11. Monsters &amp; Minions</a></li>
+          </ul>
+        </li>
 
         <li class="nav-section-label">Species &amp; Classes</li>
-        <li><a href="/species/" class="nav-link {% if page.url == '/species/' %}active{% endif %}">Overview</a></li>
-        <li><a href="/species/whisperlings/" class="nav-link nav-sub {% if '/whisperlings' in page.url %}active{% endif %}">Whisperlings</a></li>
-        <li><a href="/species/wayfarers/" class="nav-link nav-sub {% if '/wayfarers' in page.url %}active{% endif %}">Wayfarers</a></li>
-        <li><a href="/species/shellbacks/" class="nav-link nav-sub {% if '/shellbacks' in page.url %}active{% endif %}">Shellbacks</a></li>
-        <li><a href="/species/rainlings/" class="nav-link nav-sub {% if '/rainlings' in page.url %}active{% endif %}">Rainlings</a></li>
-        <li><a href="/species/veilings/" class="nav-link nav-sub {% if '/veilings' in page.url %}active{% endif %}">Veilings</a></li>
+
+        <!-- Species — child pages -->
+        <li class="nav-accordion-section" data-section="species">
+          <a href="/species/" class="nav-link nav-link-top {% if '/species' in page.url %}active{% endif %}">
+            Species &amp; Classes
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/species/whisperlings/" class="nav-link nav-sub {% if '/whisperlings' in page.url %}active{% endif %}">Whisperlings</a></li>
+            <li><a href="/species/wayfarers/"    class="nav-link nav-sub {% if '/wayfarers'    in page.url %}active{% endif %}">Wayfarers</a></li>
+            <li><a href="/species/shellbacks/"   class="nav-link nav-sub {% if '/shellbacks'   in page.url %}active{% endif %}">Shellbacks</a></li>
+            <li><a href="/species/rainlings/"    class="nav-link nav-sub {% if '/rainlings'    in page.url %}active{% endif %}">Rainlings</a></li>
+            <li><a href="/species/veilings/"     class="nav-link nav-sub {% if '/veilings'     in page.url %}active{% endif %}">Veilings</a></li>
+          </ul>
+        </li>
 
         <li class="nav-section-label">Play</li>
-        <li><a href="/equipment/" class="nav-link {% if '/equipment' in page.url %}active{% endif %}">Equipment</a></li>
-        <li><a href="/bestiary/" class="nav-link {% if '/bestiary' in page.url %}active{% endif %}">Bestiary</a></li>
-        <li><a href="/campaign/" class="nav-link {% if '/campaign' in page.url %}active{% endif %}">The Thornwick Block</a></li>
+
+        <!-- Equipment -->
+        <li class="nav-accordion-section" data-section="equipment">
+          <a href="/equipment/" class="nav-link nav-link-top {% if '/equipment' in page.url %}active{% endif %}">
+            Equipment
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/equipment/#weapons-and-tools"   class="nav-link nav-sub">Weapons &amp; Tools</a></li>
+            <li><a href="/equipment/#armour-and-clothing" class="nav-link nav-sub">Armour &amp; Clothing</a></li>
+            <li><a href="/equipment/#miscellaneous-gear"  class="nav-link nav-sub">Miscellaneous Gear</a></li>
+            <li><a href="/equipment/#carrying-capacity"   class="nav-link nav-sub">Carrying Capacity</a></li>
+          </ul>
+        </li>
+
+        <!-- Bestiary -->
+        <li class="nav-accordion-section" data-section="bestiary">
+          <a href="/bestiary/" class="nav-link nav-link-top {% if '/bestiary' in page.url %}active{% endif %}">
+            Bestiary
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/bestiary/#standard-threats"            class="nav-link nav-sub">Standard Threats</a></li>
+            <li><a href="/bestiary/#unique-bosses"               class="nav-link nav-sub">Unique Bosses</a></li>
+            <li><a href="/bestiary/#adversary-design-guidelines" class="nav-link nav-sub">Adversary Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Campaign -->
+        <li class="nav-accordion-section" data-section="campaign">
+          <a href="/campaign/" class="nav-link nav-link-top {% if '/campaign' in page.url %}active{% endif %}">
+            The Thornwick Block
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </a>
+          <ul class="nav-sub-list">
+            <li><a href="/campaign/#the-three-houses"     class="nav-link nav-sub">The Three Houses</a></li>
+            <li><a href="/campaign/#major-locations"      class="nav-link nav-sub">Major Locations</a></li>
+            <li><a href="/campaign/#factions"             class="nav-link nav-sub">Factions</a></li>
+            <li><a href="/campaign/#campaign-hooks"       class="nav-link nav-sub">Campaign Hooks</a></li>
+            <li><a href="/campaign/#secrets-of-the-block" class="nav-link nav-sub">Secrets of the Block</a></li>
+            <li><a href="/campaign/#xp-progression"       class="nav-link nav-sub">XP Progression</a></li>
+          </ul>
+        </li>
+
       </ul>
 
       <div class="sidebar-footer">
@@ -76,5 +163,6 @@
     </main>
 
   </div>
+  <script src="/assets/nav.js"></script>
 </body>
 </html>

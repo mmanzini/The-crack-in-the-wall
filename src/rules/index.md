@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Rules — The Crux System
+title: How to Play
 subtitle: Fast, elegant, dice-pool mechanics for tiny adventurers
 nav_order: 2
 ---

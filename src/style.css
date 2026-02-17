@@ -593,6 +593,46 @@ article.prose > h1:first-child {
   margin-bottom: 1.5rem;
 }
 
+/* --- Nav accordion ----------------------------------------- */
+
+/* Top-level accordion link: flex so chevron can be right-aligned */
+.nav-link-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Chevron indicator — CSS border-triangle, rotates open/closed */
+.nav-chevron {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.5px solid var(--text-faint);
+  border-bottom: 1.5px solid var(--text-faint);
+  transform: rotate(-45deg);   /* points right = collapsed */
+  transition: transform 0.2s ease, border-color 0.15s;
+  flex-shrink: 0;
+  margin-left: 0.25rem;
+}
+
+.nav-accordion-section.open > .nav-link-top .nav-chevron {
+  transform: rotate(45deg);    /* points down = expanded */
+}
+
+.nav-link-top.active .nav-chevron {
+  border-color: var(--accent);
+}
+
+/* Sub-item list — collapsed by default, animated via max-height */
+.nav-sub-list {
+  list-style: none;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+/* JS sets max-height to scrollHeight inline when open */
+
 /* --- Print ------------------------------------------------- */
 
 @media print {

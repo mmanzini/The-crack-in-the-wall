@@ -1,4 +1,9 @@
+const { IdAttributePlugin } = require("@11ty/eleventy");
+
 module.exports = function (eleventyConfig) {
+  // Generate id attributes on all headings (required for anchor nav links)
+  eleventyConfig.addPlugin(IdAttributePlugin);
+
   // Copy CSS to output
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/assets");
