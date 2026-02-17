@@ -60,6 +60,8 @@ Feral ants are wild ant colonies that pose a constant low-level danger to small 
 
 ---
 
+<img src="/assets/images/species/thralls.png" alt="Silent Choir Thralls — controlled corpse soldiers" class="role-image">
+
 ### Silent Choir Thralls
 
 *Controlled corpses. Slow, silent, and remorseless.*
@@ -123,6 +125,8 @@ The Whisper-King is supposedly a once-benevolent leader of the Whisperlings who 
 
 ---
 
+<img src="/assets/images/species/ember-hornet.png" alt="The Ember Hornet Warlord — part general, part natural disaster" class="role-image">
+
 ### Ember Hornet Warlord
 
 *Part general, part natural disaster. All fire.*
@@ -156,6 +160,8 @@ The Ember Hornets are a ferocious faction — either actual hornets mutated by m
 **Note:** If this fight were noticed by humans, they might intervene — a human shooing away a hornet provides a chaotic but potentially useful distraction.
 
 ---
+
+<img src="/assets/images/species/nightcat.png" alt="The Nightcat — it is not a cat, it is the end of the world" class="role-image">
 
 ### The Nightcat
 

@@ -5,6 +5,8 @@ subtitle: A ready-to-run campaign setting — three houses, infinite secrets
 nav_order: 6
 ---
 
+<img src="/assets/images/species/thornwick-block.png" alt="The Thornwick Block — a cul-de-sac world for the Small Folk" class="species-hero">
+
 The Thornwick Block is a quiet cul-de-sac where three houses — each with its own family, garden, and secrets — create a continent-sized realm for the Small Folk. Between the garden pond's inland sea, the ancient oak's canopy kingdom, and the storm drain's abyss, an entire world of adventure, mystery, and terror awaits those small enough to see it.
 
 ---
