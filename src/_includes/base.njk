@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if title %}{{ title }} — {% endif %}Tiny Shadows</title>
+  <meta name="description" content="Tiny Shadows — a kids-friendly TTRPG about insect-sized folk living hidden in a suburban neighbourhood." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar / Navigation -->
+    <nav class="sidebar" aria-label="Site navigation">
+      <div class="sidebar-header">
+        <a href="/" class="site-title">
+          <span class="site-title-main">Tiny Shadows</span>
+          <span class="site-badge">v0.2 Beta</span>
+        </a>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+
+        <li class="nav-section-label">The Game</li>
+        <li><a href="/setting/" class="nav-link {% if '/setting' in page.url %}active{% endif %}">Setting</a></li>
+        <li><a href="/rules/" class="nav-link {% if '/rules' in page.url %}active{% endif %}">Rules (Crux System)</a></li>
+
+        <li class="nav-section-label">Species &amp; Classes</li>
+        <li><a href="/species/" class="nav-link {% if page.url == '/species/' %}active{% endif %}">Overview</a></li>
+        <li><a href="/species/whisperlings/" class="nav-link nav-sub {% if '/whisperlings' in page.url %}active{% endif %}">Whisperlings</a></li>
+        <li><a href="/species/wayfarers/" class="nav-link nav-sub {% if '/wayfarers' in page.url %}active{% endif %}">Wayfarers</a></li>
+        <li><a href="/species/shellbacks/" class="nav-link nav-sub {% if '/shellbacks' in page.url %}active{% endif %}">Shellbacks</a></li>
+        <li><a href="/species/rainlings/" class="nav-link nav-sub {% if '/rainlings' in page.url %}active{% endif %}">Rainlings</a></li>
+        <li><a href="/species/veilings/" class="nav-link nav-sub {% if '/veilings' in page.url %}active{% endif %}">Veilings</a></li>
+
+        <li class="nav-section-label">Play</li>
+        <li><a href="/equipment/" class="nav-link {% if '/equipment' in page.url %}active{% endif %}">Equipment</a></li>
+        <li><a href="/bestiary/" class="nav-link {% if '/bestiary' in page.url %}active{% endif %}">Bestiary</a></li>
+        <li><a href="/campaign/" class="nav-link {% if '/campaign' in page.url %}active{% endif %}">The Thornwick Block</a></li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <p class="wip-note">⚠ Work in progress. Some sections are incomplete.</p>
+      </div>
+    </nav>
+
+    <!-- Mobile nav toggle -->
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main content -->
+    <main class="content" id="main-content">
+      <article class="prose">
+        {% if title %}
+          <header class="page-header">
+            <h1>{{ title }}</h1>
+            {% if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
+          </header>
+        {% endif %}
+        {{ content | safe }}
+      </article>
+    </main>
+
+  </div>
+</body>
+</html>
