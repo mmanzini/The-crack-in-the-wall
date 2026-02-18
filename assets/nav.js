@@ -82,9 +82,23 @@
   ];
 
   // ------------------------------------------------------------------
-  // Determine which section matches the current URL
+  // Resolve pathPrefix from the stylesheet href at runtime.
+  // Works for both root-hosted (localhost) and subdirectory (GitHub Pages).
+  // e.g. href="/The-crack-in-the-wall/style.css" → prefix="/The-crack-in-the-wall"
   // ------------------------------------------------------------------
-  var currentPath = window.location.pathname;
+  var prefix = '';
+  (function () {
+    var link = document.querySelector('link[rel="stylesheet"]');
+    if (link) {
+      var href = link.getAttribute('href');
+      var idx = href.indexOf('/style.css');
+      if (idx > 0) prefix = href.slice(0, idx);
+    }
+  })();
+
+  // Strip prefix from pathname before matching, so matchFn patterns work
+  // the same whether prefix is '' or '/The-crack-in-the-wall'.
+  var currentPath = window.location.pathname.replace(prefix, '') || '/';
 
   function getActiveSectionId() {
     for (var i = 0; i < NAV.length; i++) {
@@ -92,6 +106,15 @@
     }
     return null;
   }
+
+  // Prepend prefix to all child hrefs so links resolve correctly on GitHub Pages
+  (function () {
+    for (var i = 0; i < NAV.length; i++) {
+      for (var j = 0; j < NAV[i].children.length; j++) {
+        NAV[i].children[j].href = prefix + NAV[i].children[j].href;
+      }
+    }
+  })();
 
   // ------------------------------------------------------------------
   // Open a section by id; collapse all others
