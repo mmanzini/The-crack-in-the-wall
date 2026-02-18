@@ -16,8 +16,10 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.data.nav_order - b.data.nav_order);
   });
 
+  const isProduction = process.env.ELEVENTY_ENV === "production";
+
   return {
-    pathPrefix: "/The-crack-in-the-wall/",
+    pathPrefix: isProduction ? "/The-crack-in-the-wall/" : "/",
     dir: {
       input: "src",
       output: "_site",

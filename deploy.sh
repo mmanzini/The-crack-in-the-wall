@@ -5,7 +5,7 @@
 set -e
 
 echo "🔨 Building site..."
-npm run build
+ELEVENTY_ENV=production npm run build
 
 echo "🚀 Deploying to GitHub Pages (gh-pages branch)..."
 
