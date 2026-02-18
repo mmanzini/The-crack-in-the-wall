@@ -20,32 +20,32 @@ The mood balances **wonder with mystery** — reminiscent of *Coraline* or *The 
 ## Explore the book
 
 <div class="card-grid">
-  <a class="card" href="/setting/">
+  <a class="card" href="{{ '/setting/' | url }}">
     <span class="card-icon">🏡</span>
     <span class="card-title">Setting</span>
     <span class="card-desc">The hidden world of the Small Folk and the Law of Witness</span>
   </a>
-  <a class="card" href="/rules/">
+  <a class="card" href="{{ '/rules/' | url }}">
     <span class="card-icon">🎲</span>
     <span class="card-title">Rules</span>
     <span class="card-desc">The Crux System — Boons, Banes, Grit, and combat</span>
   </a>
-  <a class="card" href="/species/">
+  <a class="card" href="{{ '/species/' | url }}">
     <span class="card-icon">🐾</span>
     <span class="card-title">Species & Classes</span>
     <span class="card-desc">Five peoples, ten roles, levels 1–10</span>
   </a>
-  <a class="card" href="/equipment/">
+  <a class="card" href="{{ '/equipment/' | url }}">
     <span class="card-icon">🧵</span>
     <span class="card-title">Equipment</span>
     <span class="card-desc">Needle rapiers, beetle-shell shields, and firefly lanterns</span>
   </a>
-  <a class="card" href="/bestiary/">
+  <a class="card" href="{{ '/bestiary/' | url }}">
     <span class="card-icon">🕷️</span>
     <span class="card-title">Bestiary</span>
     <span class="card-desc">Foes from feral ants to the terrifying Nightcat</span>
   </a>
-  <a class="card" href="/campaign/">
+  <a class="card" href="{{ '/campaign/' | url }}">
     <span class="card-icon">🗺️</span>
     <span class="card-title">The Thornwick Block</span>
     <span class="card-desc">A ready-to-run campaign setting</span>

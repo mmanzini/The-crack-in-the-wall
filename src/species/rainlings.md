@@ -5,7 +5,7 @@ subtitle: Water-wielders who dance between storm and shadow
 nav_order: 3
 ---
 
-<img src="/assets/images/species/rainlings.png" alt="A Rainling in the rain, water flowing around them" class="species-hero">
+<img src="{{ '/assets/images/species/rainlings.png' | url }}" alt="A Rainling in the rain, water flowing around them" class="species-hero">
 
 **Rainlings** are small folk deeply attuned to water, rain, and the hidden network of gutters, drains, and puddles that connects the whole neighbourhood. They are quick, adaptable, and magically tied to precipitation — when it rains, Rainlings feel it in their blood, a surge of energy and possibility.
 
@@ -42,7 +42,7 @@ Rainlings have two fully detailed roles.
 
 ---
 
-<img src="/assets/images/species/raincaller.png" alt="A Raincaller summoning rain" class="role-image">
+<img src="{{ '/assets/images/species/raincaller.png' | url }}" alt="A Raincaller summoning rain" class="role-image">
 
 ## Raincaller
 

@@ -5,7 +5,7 @@ subtitle: Stout defenders and engineers of the hidden world
 nav_order: 3
 ---
 
-<img src="/assets/images/species/shellbacks.png" alt="A Shellback warrior in chitinous armour" class="species-hero">
+<img src="{{ '/assets/images/species/shellbacks.png' | url }}" alt="A Shellback warrior in chitinous armour" class="species-hero">
 
 Where other small folk rely on speed or cunning, **Shellbacks** rely on endurance. Compact and powerfully built, with natural chitinous plating over their shoulders and spine, they are the unbreakable shields of small folk society. A Shellback community might protect an entire street's worth of smaller folk from predators, building fortified homes from tin cans and bottle caps and enforcing their own brand of stubborn justice.
 
@@ -42,7 +42,7 @@ Shellbacks have one fully detailed role and a second in development.
 
 ---
 
-<img src="/assets/images/species/stalwart.png" alt="A Stalwart Shellback holding the line" class="role-image">
+<img src="{{ '/assets/images/species/stalwart.png' | url }}" alt="A Stalwart Shellback holding the line" class="role-image">
 
 ## Stalwart (Guscio Risoluto)
 

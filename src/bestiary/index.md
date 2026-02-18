@@ -64,7 +64,7 @@ Feral ants are wild ant colonies that pose a constant low-level danger to small 
 
 *Controlled corpses. Slow, silent, and remorseless.*
 
-<img src="/assets/images/species/thralls.png" alt="Silent Choir Thralls — controlled corpse soldiers" class="role-image">
+<img src="{{ '/assets/images/species/thralls.png' | url }}" alt="Silent Choir Thralls — controlled corpse soldiers" class="role-image">
 
 The **Silent Choir** is a sinister faction rumoured to practice necromancy or dark hive-mind control. Their foot soldiers — "thralls" — are small folk or insect bodies reanimated by the Choir's will, serving as mindless guards and shock troops.
 
@@ -129,7 +129,7 @@ The Whisper-King is supposedly a once-benevolent leader of the Whisperlings who 
 
 *Part general, part natural disaster. All fire.*
 
-<img src="/assets/images/species/ember-hornet.png" alt="The Ember Hornet Warlord — part general, part natural disaster" class="role-image">
+<img src="{{ '/assets/images/species/ember-hornet.png' | url }}" alt="The Ember Hornet Warlord — part general, part natural disaster" class="role-image">
 
 The Ember Hornets are a ferocious faction — either actual hornets mutated by magic or a clan of small folk who has fused with hornet spirits. The Warlord leads their raids on gardens and hideouts with savage efficiency.
 
@@ -165,7 +165,7 @@ The Ember Hornets are a ferocious faction — either actual hornets mutated by m
 
 *It is not a cat. It is the end of the world.*
 
-<img src="/assets/images/species/nightcat.png" alt="The Nightcat — it is not a cat, it is the end of the world" class="role-image">
+<img src="{{ '/assets/images/species/nightcat.png' | url }}" alt="The Nightcat — it is not a cat, it is the end of the world" class="role-image">
 
 The Nightcat is practically a legend and a local natural disaster rolled into one. To the small folk, it is a colossal, god-like predator — the size of a house, with eyes like twin moons and a purr that shakes the floorboards. It is not malicious. It is simply a cat. That's almost worse.
 
