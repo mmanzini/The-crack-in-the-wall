@@ -200,9 +200,14 @@ body {
 /* --- Page header ------------------------------------------- */
 
 .page-header {
-  margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+/* When a hero image immediately follows the header, collapse the gap */
+.page-header + .prose .species-hero:first-child,
+article.prose .species-hero:first-child {
+  margin-top: 0;
 }
 
 .page-header h1 {
@@ -245,8 +250,7 @@ article.prose > h1:first-child {
 }
 
 .prose h2 {
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
 }
 
 .prose p {
@@ -329,8 +333,7 @@ article.prose > h1:first-child {
 
 .prose hr {
   border: none;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
 .prose table {
@@ -567,6 +570,7 @@ article.prose > h1:first-child {
   .role-image {
     width: 100%;
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -574,23 +578,25 @@ article.prose > h1:first-child {
 
 .species-hero,
 .role-image {
-  /* Bleed 3rem beyond the prose column on each side */
-  width: calc(100% + 6rem);
-  margin-left: -3rem;
+  /* Bleed beyond the prose column on each side */
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
   height: auto;
-  border-radius: 12px;
   display: block;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .species-hero {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
 }
 
 .role-image {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 /* --- Nav accordion ----------------------------------------- */
