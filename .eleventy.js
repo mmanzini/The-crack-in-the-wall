@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/The-crack-in-the-wall/",
     dir: {
       input: "src",
       output: "_site",
