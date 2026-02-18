@@ -204,11 +204,6 @@ body {
   padding-bottom: 0;
 }
 
-/* When a hero image immediately follows the header, collapse the gap */
-.page-header + .prose .species-hero:first-child,
-article.prose .species-hero:first-child {
-  margin-top: 0;
-}
 
 .page-header h1 {
   font-family: var(--font-serif);
@@ -534,6 +529,36 @@ article.prose > h1:first-child {
   margin: 0;
 }
 
+/* --- Species images ---------------------------------------- */
+
+/* Hero image — cinematic full-content-area strip.
+   The image lives inside .prose (max-width:680px, margin:auto) inside
+   .content (margin-left:240px, padding:2rem on each side).
+   Math: from inside .prose the element's left is at viewport-x = sidebar/2 + viewport/2 - 340.
+   To shift it to sidebar-width from viewport left: margin-left = calc(-50vw + sidebar/2 + 50%).
+   Width spans from sidebar to viewport right edge. */
+/* Both hero and role images share the same full-width treatment.
+   Natural aspect ratio is preserved (no max-height crop). */
+.species-hero,
+.role-image {
+  display: block;
+  margin-left: calc(-50vw + var(--sidebar-width) / 2 + 50%);
+  width: calc(100vw - var(--sidebar-width));
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.species-hero {
+  margin-top: -3.5rem;   /* pull up flush to remove content top padding */
+  margin-bottom: 2rem;
+}
+
+.role-image {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 /* --- Responsive -------------------------------------------- */
 
 @media (max-width: 768px) {
@@ -558,45 +583,23 @@ article.prose > h1:first-child {
 
   .prose h1 { font-size: 1.6rem; }
   .prose h2 { font-size: 1.25rem; }
+
+  /* On tablet/mobile the sidebar is off-screen — both image types fill full viewport */
+  .species-hero,
+  .role-image {
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+  }
+
+  .species-hero {
+    margin-top: -4rem;
+  }
 }
 
 @media (max-width: 480px) {
   .card-grid {
     grid-template-columns: 1fr;
   }
-
-  /* On small screens, images sit flush — no bleed */
-  .species-hero,
-  .role-image {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-}
-
-/* --- Species images ---------------------------------------- */
-
-.species-hero,
-.role-image {
-  /* Bleed beyond the prose column on each side */
-  width: calc(100% + 10rem);
-  margin-left: -5rem;
-  height: auto;
-  display: block;
-}
-
-.species-hero {
-  border-radius: 0;
-  box-shadow: none;
-  margin-top: -2rem;
-  margin-bottom: 3rem;
-}
-
-.role-image {
-  border-radius: 8px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
 }
 
 /* --- Nav accordion ----------------------------------------- */
@@ -650,7 +653,6 @@ article.prose > h1:first-child {
 
 .sidebar-footer {
   padding: 1rem 1.25rem 1.5rem;
-  border-top: 1px solid var(--border);
   margin-top: auto;
 }
 
