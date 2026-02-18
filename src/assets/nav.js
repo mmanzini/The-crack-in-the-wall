@@ -88,11 +88,11 @@
   // ------------------------------------------------------------------
   var prefix = '';
   (function () {
-    var link = document.querySelector('link[rel="stylesheet"]');
-    if (link) {
-      var href = link.getAttribute('href');
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      var href = links[i].getAttribute('href');
       var idx = href.indexOf('/style.css');
-      if (idx > 0) prefix = href.slice(0, idx);
+      if (idx > 0) { prefix = href.slice(0, idx); break; }
     }
   })();
 
